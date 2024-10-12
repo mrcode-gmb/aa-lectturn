@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Mail\UserStored;
 use Illuminate\Http\Request;
 use App\Models\ApplyCompetation;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 
 class ApplyCompetationController extends Controller
 {
@@ -53,6 +55,7 @@ class ApplyCompetationController extends Controller
             ]);
 
         }
+        $user = User::where("id", Auth::user()->id)->first();
         $apply = ApplyCompetation::create([
             "user_id" => Auth::user()->id,
             "title" => $request->title,
@@ -68,6 +71,7 @@ class ApplyCompetationController extends Controller
             User::where("id", Auth::user()->id)->update([
                 "status" => 1
             ]);
+            Mail::to($user->email)->send(new UserStored($user));
             return redirect()->back()->with("success", "Your application submitted successful");
         }
         return redirect()->back()->with("success", "Somthing Went wrong");
