@@ -1,0 +1,53 @@
+<?php
+
+use App\Models\User;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ApplyCompetationController;
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider and all of them will
+| be assigned to the "web" middleware group. Make something great!
+|
+*/
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/dashboard', function () {
+    return view('dashboard',
+    [
+        "allUsers" => User::where("role",2)->count(),
+        "allPendingUsers" => User::where("status",1)->count(),
+        "allApprovedUsers" => User::where("status",2)->count(),
+        "allRejectedUsers" => User::where("status",3)->count(),
+    ]);
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+
+    Route::controller(ApplyCompetationController::class)->group(function () {
+        Route::get("/apply", "index")->name("apply");
+        Route::get("/users/applied", "showAppliedUsers")->name("apply.showAppliedUsers");
+        Route::post("apply/store", "store")->name("apply.store");
+        Route::post("apply/update", "update")->name("apply.update");
+    });
+});
+
+Route::get('/send-test-email', function () {
+    Mail::raw('This is a test email sent using MailHog!', function ($message) {
+        $message->to('recipient@gmail.com')
+            ->subject('Test Email');
+    });
+});
+require __DIR__ . '/auth.php';
