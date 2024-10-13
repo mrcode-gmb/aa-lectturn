@@ -31,7 +31,7 @@
             <div class="form">
                 <div class="col-2 form-averter">
                     <div class="avater">
-                        <img src="{{asset('asset/avaters/3d-isolated-man-is-singing-png (2).png')}}" alt="">
+                        <img src="{{ asset('asset/avaters/3d-isolated-man-is-singing-png (2).png') }}" alt="">
                     </div>
                 </div>
                 <div class="col-2 form-data">
@@ -39,7 +39,9 @@
 
                         <div class="form-header">
                             <h4>Forgot your password? 👋🏻</h4>
-                            <p>No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.</p>
+                            <p>No problem. Just let us know your email address and we will email you a password reset
+                                link that will allow you to choose a new one.</p>
+                            <x-auth-session-status class="mb-4" :status="session('status')" />
                         </div>
                         <div class="form-body">
                             <div>

@@ -13,64 +13,67 @@
                 </div>
                 <div>
                     <div class="tabs" id="tabls">
-                        <div class="container">
-                            <div class="col-md-3">
-                                <div class="icon-flex">
-                                    <div class="left">
-                                        <i class="fa fa-users"></i>
+                        <div class="">
+                            <div class="container-fluiding">
+                                <div class="col-md-3">
+                                    <div class="icon-flex">
+                                        <div class="left">
+                                            <i class="fa fa-users"></i>
+                                        </div>
+                                        <div class="right">
+                                            <h4>Users</h4>
+                                            <p class="percent" id="percent">0%</p>
+                                        </div>
                                     </div>
-                                    <div class="right">
-                                        <h4>Users</h4>
-                                        <p class="percent" id="percent">0%</p>
-                                    </div>
-                                </div>
-                                <div class="loader">
-                                    <div class="shows" id="shows"></div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="icon-flex">
-                                    <div class="left">
-                                        <i class="fa fa-hand-point-right"></i>
-                                    </div>
-                                    <div class="right">
-                                        <h4>Users Approved</h4>
-                                        <p class="percent" id="percent1">0%</p>
+                                    <div class="loader">
+                                        <div class="shows" id="shows"></div>
                                     </div>
                                 </div>
-                                <div class="loader">
-                                    <div class="shows" id="shows1"></div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="icon-flex">
-                                    <div class="left">
-                                        <i class="fa fa-money-check-alt"></i>
+                                <div class="col-md-3">
+                                    <div class="icon-flex">
+                                        <div class="left">
+                                            <i class="fa fa-hand-point-right"></i>
+                                        </div>
+                                        <div class="right">
+                                            <h4>Users Approved</h4>
+                                            <p class="percent" id="percent1">0%</p>
+                                        </div>
                                     </div>
-                                    <div class="right">
-                                        <h4>Users Pending</h4>
-                                        <p class="percent" id="percent2">0%</p>
-                                    </div>
-                                </div>
-                                <div class="loader">
-                                    <div class="shows" id="shows2"></div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="icon-flex">
-                                    <div class="left">
-                                        <i class="fa fa-user-graduate"></i>
-                                    </div>
-                                    <div class="right">
-                                        <h4>Users Rejected</h4>
-                                        <p class="percent" id="percent3">0%</p>
+                                    <div class="loader">
+                                        <div class="shows" id="shows1"></div>
                                     </div>
                                 </div>
-                                <div class="loader">
-                                    <div class="shows" id="shows3"></div>
+                                <div class="col-md-3">
+                                    <div class="icon-flex">
+                                        <div class="left">
+                                            <i class="fa fa-money-check-alt"></i>
+                                        </div>
+                                        <div class="right">
+                                            <h4>Users Pending</h4>
+                                            <p class="percent" id="percent2">0%</p>
+                                        </div>
+                                    </div>
+                                    <div class="loader">
+                                        <div class="shows" id="shows2"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="icon-flex">
+                                        <div class="left">
+                                            <i class="fa fa-user-graduate"></i>
+                                        </div>
+                                        <div class="right">
+                                            <h4>Users Rejected</h4>
+                                            <p class="percent" id="percent3">0%</p>
+                                        </div>
+                                    </div>
+                                    <div class="loader">
+                                        <div class="shows" id="shows3"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <x-auth-session-status class="mb-4" :status="session('status')" />
                         @if (Auth::user()->status != 0)
                             @if (Auth::user()->status == 1)
                                 <div class="full-chart">

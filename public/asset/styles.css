@@ -746,7 +746,7 @@ header {
 
 }
 
-.container {
+.container-fluiding {
     width: 100% !important;
     margin: auto;
     display: grid;
@@ -754,7 +754,7 @@ header {
     gap: 15px;
 }
 
-.container .col-md-3 {
+.container-fluiding .col-md-3 {
     box-shadow: 0 8px 8px 4px #efefef;
     background: #fff;
     margin-top: 30px;
@@ -1338,7 +1338,7 @@ header {
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (max-width: 1224px) {
-    .container{
+    .container-fluiding{
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
     .grid\:3{
@@ -1374,7 +1374,7 @@ header {
         width: 50px;
         height: 50px;
     }
-    .container{
+    .container-fluiding{
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
     .main-body{

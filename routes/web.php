@@ -39,15 +39,10 @@ Route::middleware('auth')->group(function () {
     Route::controller(ApplyCompetationController::class)->group(function () {
         Route::get("/apply", "index")->name("apply");
         Route::get("/users/applied", "showAppliedUsers")->name("apply.showAppliedUsers");
+        Route::get("/users/all", "showAlldUsers")->name("all.showAppliedUsers");
         Route::post("apply/store", "store")->name("apply.store");
         Route::post("apply/update", "update")->name("apply.update");
     });
 });
 
-Route::get('/send-test-email', function () {
-    Mail::raw('This is a test email sent using MailHog!', function ($message) {
-        $message->to('recipient@gmail.com')
-            ->subject('Test Email');
-    });
-});
 require __DIR__ . '/auth.php';

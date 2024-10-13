@@ -20,7 +20,7 @@ class UserStored extends Mailable
     public function build()
     {
         return $this->view('mail.apply_mail')
-                    ->subject('Welcome to Our Platform')
+                    ->subject('ICoNDACoM Application Notification')
                     ->with([
                         'user' => $this->user,
                     ]);

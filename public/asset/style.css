@@ -102,19 +102,24 @@ body {
     transition: 0.5s;
     padding-top: 20px;
 }
-.header-right .header-links ul li a:hover+.drop-down{
+
+.header-right .header-links ul li a:hover+.drop-down {
     display: block;
 }
-.drop-down:hover{
+
+.drop-down:hover {
     display: block;
 }
-.drop-down div{
-    padding:8px 15px;
+
+.drop-down div {
+    padding: 8px 15px;
 }
-.drop-down div:hover{
+
+.drop-down div:hover {
     background: #efefef;
 }
-.drop-down div a{
+
+.drop-down div a {
     text-decoration: none;
     color: #333 !important;
 }
@@ -464,17 +469,19 @@ body {
     color: black;
 }
 
-.list-title{
+.list-title {
     padding-left: 20px;
 }
-.list-title h5{
+
+.list-title h5 {
     font-size: 16px;
     margin: 12px 0;
 }
 
-.text-left{
+.text-left {
     text-align: left;
 }
+
 /* Desktops and laptops ----------- */
 @media only screen and (max-width: 1654px) {
     .pro-body {
@@ -491,10 +498,12 @@ body {
     .pro-body {
         width: 100%;
     }
-    .pro-second-body-grid{
+
+    .pro-second-body-grid {
         width: 100%;
         padding: 0 20px;
     }
+
     .pro-second-body {
         grid-template-columns: 100%;
     }
@@ -658,9 +667,11 @@ body {
     .pro-body {
         width: 100%;
     }
-    .drop-down{
+
+    .drop-down {
         position: relative;
     }
+
     .pro-second-body {
         grid-template-columns: 100%;
     }
@@ -668,14 +679,17 @@ body {
     .pro-body-title h4 {
         font-size: 1.5rem;
     }
-    .pro-second-body-grid{
+
+    .pro-second-body-grid {
         width: 95%;
 
     }
-    .pro-second-body-grid H4{
+
+    .pro-second-body-grid H4 {
         font-size: 1.5rem;
 
     }
+
     .footer-row {
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
@@ -683,7 +697,8 @@ body {
     .about-details {
         width: 90%;
     }
-    .about-we{
+
+    .about-we {
         height: 70vh;
     }
 
@@ -826,4 +841,45 @@ body {
 
     /* header mobile view  */
 
+}
+
+.mail-sender-class {
+    width: 100%;
+    height: 100vh;
+    background: #ddd;
+    display: flex;
+}
+
+.mail-sender {
+    width: 90%;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.mail-center {
+    text-align: center;
+}
+
+.mail-center p {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.mail-sender .mail-link {
+    margin: 20px 0;
+}
+
+.mail-sender .mail-link a {
+    color: white;
+    background: var(--main-color);
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.mail-base-ragrd p{
+    color: #444;
 }

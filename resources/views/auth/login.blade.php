@@ -1,6 +1,5 @@
 <x-guest-layout>
     <!-- Session Status -->
-    <x-auth-session-status class="mb-4" :status="session('status')" />
 
     <section id="form">
         <form class="form-dd" method="POST" action="{{ route('login') }}">
@@ -17,6 +16,7 @@
                         <div class="form-header">
                             <h4>Welcome Back! 👋🏻</h4>
                             <p>Please sign-in to your account and start the adventure</p>
+                            <x-auth-session-status class="mb-4" :status="session('status')" />
                         </div>
                         <div class="form-body">
                             <div>

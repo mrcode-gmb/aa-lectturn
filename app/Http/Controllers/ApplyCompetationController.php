@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use App\Mail\UserStored;
+use App\Mail\ApproveMail;
+use App\Mail\RejectedMail;
 use Illuminate\Http\Request;
 use App\Models\ApplyCompetation;
 use Illuminate\Support\Facades\Auth;
@@ -80,7 +82,7 @@ class ApplyCompetationController extends Controller
     public function showAppliedUsers()
     {
         if (Auth::user()->role == 1) {
-            $appliedusers = ApplyCompetation::with('user')->get()->transform(fn($data) => [
+            $appliedusers = ApplyCompetation::with('user')->orderBy("id", "DESC")->get()->transform(fn($data) => [
                 "id" => encrypt($data->id) ?? null,
                 "user_id" => encrypt($data->user_id) ?? null,
                 "name" => $data->user->name ?? null,
@@ -131,10 +133,19 @@ class ApplyCompetationController extends Controller
             "user_id" => "required",
         ]);
 
-        $user = User::where("id", decrypt($request->user_id))->update([
+        $user = User::where("id", decrypt($request->user_id))->first();
+
+        $userStatus = User::where("id", decrypt($request->user_id))->update([
             "status" => $request->status
         ]);
-        if ($user) {
+        if ($userStatus) {
+            if($request->status == 2){
+                Mail::to($user->email)->send(new ApproveMail($user));
+            }
+            else{
+                Mail::to($user->email)->send(new RejectedMail($user));
+
+            }
             return redirect()->back()->with("success", "Your status has been change successfull");
         }
         return redirect()->back()->with("success", "Something went wrong");
@@ -146,5 +157,23 @@ class ApplyCompetationController extends Controller
     public function destroy(ApplyCompetation $applyCompetation)
     {
         //
+    }
+
+
+    public function showAlldUsers()
+    {
+        if (Auth::user()->role == 1) {
+            $appliedusers = User::where("role", 2)->orderBy("id", "DESC")->get()->transform(fn($data) => [
+                "id" => encrypt($data->id) ?? null,
+                "user_id" => encrypt($data->user_id) ?? null,
+                "name" => $data->name ?? null,
+                "email" => $data->email ?? null,
+                "status" => $data->status,
+                "date" => $data->created_at->format("M D, Y h:i A"),
+            ]);
+            return view("alluser", ["appliedusers" => $appliedusers]);
+        } else {
+            return view("dashboard");
+        }
     }
 }
