@@ -458,15 +458,15 @@
                         <div class="footer-col text-right justify-space-right sm-mt-6">
                             <h3>Contact us</h3>
                             <div class="footer-clock justify-space-right">
-                                <p># State law-cost near army barrack</p>
+                                <p># in Open Theatre, Old Campus, Bayero University, Kano, Kano State, Nigeria</p>
                                 <i class="fa fa-location-dot"></i>
                             </div>
                             <div class="footer-clock justify-space-right">
-                                <p>drinksbymaryoyi@gmail.com</p>
+                                <p>icondacom.mth@buk.edu.ng</p>
                                 <i class="fa fa-regular fa-paper-plane"></i>
                             </div>
                             <div class="footer-clock justify-space-right">
-                                <p>+234 - 7038556167</p>
+                                <p>+234 - 8067864645</p>
                                 <i class="fa fa-phone"></i>
                             </div>
                         </div>
@@ -486,7 +486,7 @@
                                 <i class="fa fa-brands fa-youtube"></i>
                             </a>
                         </div>
-                        <p>Copyright &copy; All Right Reserved 2024, GSU (Gombe State)</p>
+                        <p>Copyright &copy; All Right Reserved 2024, ICoNDACoM</p>
                     </div>
                 </div>
             </section>
