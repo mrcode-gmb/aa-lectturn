@@ -1,11 +1,10 @@
 <IfModule mod_rewrite.c>
-    # That was ONLY to protect you from 500 errors
-    # If your server did not have mod_rewrite enabled
+    # Enable Rewrite Engine
     RewriteEngine On
 
-    # NOT needed unless you're using mod_alias to redirect
-    RewriteCond %{REQUEST_URI} !/public
-    RewriteRule ^(.*)$ public/$1 [L]
+    # Redirect all requests to /public unless already pointing to /public
+    RewriteCond %{REQUEST_URI} !^/public/.*$
+    RewriteRule ^(.*)$ /public/$1 [L]
 
-    # Direct all requests to /public folder
 </IfModule>
+
