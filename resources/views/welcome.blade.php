@@ -485,7 +485,7 @@
                             </a>
                         </div>
                         <p>Copyright &copy; All Right Reserved 2024, ICoNDACoM</p>
-                        <p>Copyright &copy; All Right Reserved 2024, ICoNDACoM</p>
+                        <p>Developed by <a href="https://mrcode-gmb.github.io" style="color: #333;">ABUBAKAR MRCODE</a></p>
                     </div>
                 </div>
             </section>
