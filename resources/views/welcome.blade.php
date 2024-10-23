@@ -24,7 +24,7 @@
             <div id="header">
                 <div class="header">
                     <div class="col header-left">
-                        <img src="{{asset('asset/photos/GSU.jpg')}}" alt="" class="header-logo">
+                        <img src="{{ asset('asset/photos/GSU.jpg') }}" alt="" class="header-logo">
                         <h4>ICoNDACoM</h4>
                     </div>
                     <div class="col header-right">
@@ -32,51 +32,34 @@
                             <div class="header-links">
                                 <ul>
                                     <li>
-                                        <a href="#home-welcome">Home</a>
+                                        <a href="#body">Home</a>
                                     </li>
                                     <li>
-                                        <a href="#footer">Registration</a>
+                                        <a href="https://icondacom.com.ng/apply">Registration</a>
                                     </li>
                                     <li>
-                                        <a href="">About Us</a>
+                                        <a href="#aboutus">About Us</a>
                                     </li>
                                     <li>
-                                        <a href="">Contact Us</a>
+                                        <a href="#footer">Contact Us</a>
                                     </li>
-                                    <li>
-                                        <a href="">Terms & Condition</a>
-                                    </li>
-                                    <li>
-                                        <a href="#!">More</a>
-                                        <div class="drop-down">
-                                            <div>
-                                                <a href="">View Registration List</a>
-                                            </div>
-
-                                            @if (Route::has('login'))
-                                                    @auth
-                                                        <div>
-                                                            <a href="{{ url('/dashboard') }}">Dashboard</a>
-                                                        </div>
-                                                    @else
-                                                        <div>
-                                                            <a href="{{ route('login') }}">Log in</a>
-                                                        </div>
-                                                        @if (Route::has('register'))
-                                                            <div>
-                                                                <a href="{{ route('register') }}">Create Account</a>
-                                                            </div>
-                                                        @endif
-                                                    @endauth
+                                    @if (Route::has('login'))
+                                        @auth
+                                            <li>
+                                                <a href="{{ url('/dashboard') }}">Dashboard</a>
+                                            </li>
+                                        @else
+                                            <li>
+                                                <a href="{{ route('login') }}">Log in</a>
+                                            </li>
+                                            @if (Route::has('register'))
+                                                <li>
+                                                    <a href="{{ route('register') }}">Create Account</a>
+                                                </li>
                                             @endif
-
-
-                                        </div>
-                                    </li>
+                                        @endauth
+                                    @endif
                                 </ul>
-                            </div>
-                            <div class="header-contact">
-                                <input type="search" placeholder="Search...">
                             </div>
                         </div>
                     </div>
@@ -109,7 +92,9 @@
                         IN APPLIED AND COMPUTATIONAL MATHEMATICS
                         (ICoNDACoM 2025)
                     </h4>
-                    <img src="asset/flierFapson2024.jpeg" alt="">
+                    <a href="{{ asset('asset/flierFapson2024.jpeg') }}">
+                        <img src="{{ asset('asset/flierFapson2024.jpeg') }}" alt="">
+                    </a>
                     <div class="pro-secord-body-contents">
                         <p>Register now and participate in the 1st International Conference on New Developments in
                             Applied and Computational Mathematics (ICoNDACoM 2025), a premier event showcasing the
@@ -247,170 +232,170 @@
                         <div class="pro-second-right-block">
                             <a href="">
                                 <h3>
-                                    gsu PARTNERSHIP EXPLANATION: A Game Changer for Global Academic Collaboration.
+                                    1st International Conference on New Developments in Applied and Computational
+                                    Mathematics (ICoNDACoM 2025).
                                 </h3>
-                                <p>September 25, 2024</p>
+                                <p>Join us for ICoNDACoM 2025, the first-ever international conference dedicated to
+                                    exploring emerging trends in applied and computational mathematics. This event
+                                    promises a platform for global experts to present their latest research, exchange
+                                    ideas, and foster collaborations.
+
+                                    Scheduled for 30th May to 1st June 2025 in Open Theatre, Old Campus, Bayero
+                                    University, Kano, Kano State, Nigeria, ICoNDACoM 2025 will cover diverse
+                                    topics, including mathematical modeling, algorithms, and data analysis. Stay tuned
+                                    for registration details and further updates!</p>
+                                {{-- <p>September 25, 2024</p> --}}
                             </a>
                         </div>
                         <div class="pro-second-right-block">
                             <a href="">
                                 <h3>
-                                    CONGRATULATIONS DR JOHNBOSCO EGBUERI
+                                    ICoNDACoM 2025: A New Era in Applied and Computational Mathematics
                                 </h3>
-                                <p>September 25, 2024</p>
+                                <p>We are thrilled to announce the inaugural International Conference on New
+                                    Developments in Applied and Computational Mathematics (ICoNDACoM 2025), set for
+                                    30th May to 1st June 2025. This landmark event will gather experts, researchers, and
+                                    professionals from around the world to discuss groundbreaking developments in areas
+                                    such as machine learning, numerical simulations, and optimization.
+
+                                    Mark your calendar, and keep an eye out for upcoming announcements on speakers and
+                                    registration!</p>
                             </a>
                         </div>
                         <div class="pro-second-right-block">
                             <a href="">
                                 <h3>
-                                    Courtesy Visit: Faculty of Health Sciences and Technology Engages Ag. Vice
-                                    Chancellor
+                                    ICoNDACoM 2025: Pioneering the Future of Applied Mathematics
                                 </h3>
-                                <p>September 25, 2024</p>
-                            </a>
-                        </div>
-                        <div class="pro-second-right-block">
-                            <a href="">
-                                <h3>
-                                    2024 POST UTME AND DIRECT ENTRY SCREENING EXERCISE
-                                </h3>
-                                <p>September 25, 2024</p>
-                            </a>
-                        </div>
-                        <div class="pro-second-right-block">
-                            <a href="">
-                                <h3>
-                                    gsu PARTNERSHIP EXPLANATION: A Game Changer for Global Academic Collaboration.
-                                </h3>
-                                <p>September 25, 2024</p>
-                            </a>
-                        </div>
-                        <div class="pro-second-right-block">
-                            <a href="">
-                                <h3>
-                                    CONGRATULATIONS DR JOHNBOSCO EGBUERI
-                                </h3>
-                                <p>September 25, 2024</p>
-                            </a>
-                        </div>
-                        <div class="pro-second-right-block">
-                            <a href="">
-                                <h3>
-                                    Courtesy Visit: Faculty of Health Sciences and Technology Engages Ag. Vice
-                                    Chancellor
-                                </h3>
-                                <p>September 25, 2024</p>
-                            </a>
-                        </div>
-                        <div class="pro-second-right-block">
-                            <a href="">
-                                <h3>
-                                    2024 POST UTME AND DIRECT ENTRY SCREENING EXERCISE
-                                </h3>
-                                <p>September 25, 2024</p>
-                            </a>
-                        </div>
-                        <div class="pro-second-right-block">
-                            <a href="">
-                                <h3>
-                                    gsu PARTNERSHIP EXPLANATION: A Game Changer for Global Academic Collaboration.
-                                </h3>
-                                <p>September 25, 2024</p>
-                            </a>
-                        </div>
-                        <div class="pro-second-right-block">
-                            <a href="">
-                                <h3>
-                                    CONGRATULATIONS DR JOHNBOSCO EGBUERI
-                                </h3>
-                                <p>September 25, 2024</p>
-                            </a>
-                        </div>
-                        <div class="pro-second-right-block">
-                            <a href="">
-                                <h3>
-                                    Courtesy Visit: Faculty of Health Sciences and Technology Engages Ag. Vice
-                                    Chancellor
-                                </h3>
-                                <p>September 25, 2024</p>
-                            </a>
-                        </div>
-                        <div class="pro-second-right-block">
-                            <a href="">
-                                <h3>
-                                    2024 POST UTME AND DIRECT ENTRY SCREENING EXERCISE
-                                </h3>
-                                <p>September 25, 2024</p>
-                            </a>
-                        </div>
-                        <div class="pro-second-right-block">
-                            <a href="">
-                                <h3>
-                                    gsu PARTNERSHIP EXPLANATION: A Game Changer for Global Academic Collaboration.
-                                </h3>
-                                <p>September 25, 2024</p>
-                            </a>
-                        </div>
-                        <div class="pro-second-right-block">
-                            <a href="">
-                                <h3>
-                                    CONGRATULATIONS DR JOHNBOSCO EGBUERI
-                                </h3>
-                                <p>September 25, 2024</p>
-                            </a>
-                        </div>
-                        <div class="pro-second-right-block">
-                            <a href="">
-                                <h3>
-                                    Courtesy Visit: Faculty of Health Sciences and Technology Engages Ag. Vice
-                                    Chancellor
-                                </h3>
-                                <p>September 25, 2024</p>
-                            </a>
-                        </div>
-                        <div class="pro-second-right-block">
-                            <a href="">
-                                <h3>
-                                    2024 POST UTME AND DIRECT ENTRY SCREENING EXERCISE
-                                </h3>
-                                <p>September 25, 2024</p>
-                            </a>
-                        </div>
-                        <div class="pro-second-right-block">
-                            <a href="">
-                                <h3>
-                                    gsu PARTNERSHIP EXPLANATION: A Game Changer for Global Academic Collaboration.
-                                </h3>
-                                <p>September 25, 2024</p>
-                            </a>
-                        </div>
-                        <div class="pro-second-right-block">
-                            <a href="">
-                                <h3>
-                                    CONGRATULATIONS DR JOHNBOSCO EGBUERI
-                                </h3>
-                                <p>September 25, 2024</p>
-                            </a>
-                        </div>
-                        <div class="pro-second-right-block">
-                            <a href="">
-                                <h3>
-                                    Courtesy Visit: Faculty of Health Sciences and Technology Engages Ag. Vice
-                                    Chancellor
-                                </h3>
-                                <p>September 25, 2024</p>
-                            </a>
-                        </div>
-                        <div class="pro-second-right-block">
-                            <a href="">
-                                <h3>
-                                    2024 POST UTME AND DIRECT ENTRY SCREENING EXERCISE
-                                </h3>
-                                <p>September 25, 2024</p>
+                                <p>The 1st International Conference on New Developments in Applied and Computational
+                                    Mathematics (ICoNDACoM 2025) is coming soon! This global event will spotlight the
+                                    latest advancements in fields like computational techniques, modeling innovations,
+                                    and interdisciplinary applications of mathematics.
+
+                                    Happening on 30th May to 1st June 2025, this is your chance to engage with leaders
+                                    in the
+                                    mathematical sciences. More details on sessions, speakers, and how to attend will
+                                    follow shortly. Stay connected!</p>
                             </a>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="hosted-by">
+                <div>
+                    <center>
+                        <h2>ICoNDACoM Conference</h2>
+                        <p>Conference Hosts: Gombe State University (GSU) & Bayero University Kano (BUK)</p>
+                        <br>
+                    </center>
+                </div>
+                <div class="hosted-section">
+                    <div class="hosted-section-gsu">
+                        <img src="{{ asset('asset/photos/aGSU.jpg') }}" alt="">
+                        <h4>Gombe State University (GSU)</h4>
+                        <a href="https://gsu.edu.ng">https://gsu.edu.ng</a>
+                    </div>
+                    <div class="hosted-section-gsu">
+                        <img src="{{ asset('asset/photos/buk-removebg-preview.png') }}" alt="">
+                        <h4>Bayero University Kano (BUK)</h4>
+                        <a href="https://buk.edu.ng">https://buk.edu.ng</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-container">
+                <h2>FAQs - ICoNDACoM 2025</h2>
+
+                <div class="faq-grid">
+                    <div>
+                        <div class="faq-item">
+                            <button class="faq-question">What is ICoNDACoM 2025?</button>
+                            <div class="faq-answer">
+                                <p>ICoNDACoM 2025 is the 1st International Conference on New Developments in Applied and
+                                    Computational Mathematics. It brings together researchers, scholars, and
+                                    practitioners to discuss the latest innovations and applications in the field.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="faq-item">
+                            <button class="faq-question">When and where will the conference take place?</button>
+                            <div class="faq-answer">
+                                <p>The conference will be held from 30th May to 1st June 2025 in Open Theatre, Old
+                                    Campus, Bayero
+                                    University, Kano, Kano State, Nigeria. Stay tuned for updates on venue and detailed
+                                    schedule.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="faq-item">
+                            <button class="faq-question">Who can participate?</button>
+                            <div class="faq-answer">
+                                <p>ICoNDACoM 2025 is open to academics, professionals, students, and anyone interested
+                                    in applied and computational mathematics.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="faq-item">
+                            <button class="faq-question">How can I register for the conference?</button>
+                            <div class="faq-answer">
+                                <p>You can register online through our website. Visit the Registration section for
+                                    detailed instructions and fees. To register, you will need to create an account and
+                                    complete the application. After making your payment via the provided bank details,
+                                    you should upload the payment receipt on our website through the Payment page.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="faq-item">
+                            <button class="faq-question">What topics will be covered at the conference?</button>
+                            <div class="faq-answer">
+                                <p>The conference will cover a wide range of topics, including but not limited to:</p>
+                                <p>
+                                    1. Iterative Algorithms for Numerical Optimization <br>
+                                    2. Algorithms and Computations of Fixed Points <br>
+                                    3. Mathematical Modeling in Biology, Medicine, etc.<br>
+                                    4. Differential Equations<br>
+                                    5. Differential Games<br>
+                                    6. Dynamical System<br>
+                                    7. Numerical Analysis<br>
+                                    8. Fluid Dynamics<br>
+                                    9. Cryptography and Quantum Computing<br>
+                                    10. Statistics (Probability, Stochastic, Survey, etc.)<br>
+                                    11. Mathematical Economics and Finance<br>
+                                    12. Projection Methods for Nonlinear Problems<br>
+                                    13. Machine Learning<br>
+                                    14. Problems Arising from Compressive Sensing<br>
+                                    15. Mathematical Physics<br>
+                                    And so on.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div>
+                        <div class="fag-item">
+                            <button class="faq-question">How do I get in touch with the organizers?</button>
+                            <div class="faq-answer">
+                                <p>You can reach the organizing committee through the Contact Us page on our website or
+                                    via emails.</p>
+                                <p>
+                                    <a href="mailto:icondacom.mth@buk.edu.ng">icondacom.mth@buk.edu.ng</a> <br>
+                                    <a href="mail:maaliyu@gsu.edu.ng">maaliyu@gsu.edu.ng</a><br>
+                                    <a href="mailto:hmuhd.mth@buk.edu.ng">hmuhd.mth@buk.edu.ng</a> <br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <!-- !-- home page section  -->
@@ -485,7 +470,8 @@
                             </a>
                         </div>
                         <p>Copyright &copy; All Right Reserved 2024, ICoNDACoM</p>
-                        <p>Developed by <a href="https://mrcode-gmb.github.io" style="color: #333;">ABUBAKAR MRCODE</a></p>
+                        <p>Powered by <a href="https://mrcode-gmb.github.io" style="color: #333;">ABUBAKAR IBRAHIM</a>
+                        </p>
                     </div>
                 </div>
             </section>
@@ -512,20 +498,23 @@
         }
 
 
-        // function myFunction() {
-        //     let input = document.getElementById('myInput').value
-        //     input = input.toLowerCase();
-        //     let x = document.getElementsByClassName('table-row');
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqQuestions = document.querySelectorAll('.faq-question');
 
-        //     for (i = 0; i < x.length; i++) {
-        //         if (!x[i].innerHTML.toLowerCase().includes(input)) {
-        //             x[i].style.display = "none";
-        //         }
-        //         else {
-        //             x[i].style.display = "";
-        //         }
-        //     }
-        // }
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    const isOpen = answer.style.display === 'block';
+
+                    // Close all other answers
+                    document.querySelectorAll('.faq-answer').forEach(el => el.style.display =
+                        'none');
+
+                    // Toggle the clicked answer
+                    answer.style.display = isOpen ? 'none' : 'block';
+                });
+            });
+        });
     </script>
 </body>
 
