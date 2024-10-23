@@ -31,6 +31,20 @@ class ApplyCompetationController extends Controller
         }
     }
 
+    public function userPayment()
+    {
+        if (Auth::user()->role == 1) {
+            return view("dashboard", [
+                "allUsers" => User::where("role", 2)->count(),
+                "allPendingUsers" => User::where("status", 1)->count(),
+                "allApprovedUsers" => User::where("status", 2)->count(),
+                "allRejectedUsers" => User::where("status", 3)->count(),
+            ]);
+        } else {
+            return view("make-payment");
+        }
+    }
+
     /**
      * Show the form for creating a new resource.
      */
@@ -139,10 +153,9 @@ class ApplyCompetationController extends Controller
             "status" => $request->status
         ]);
         if ($userStatus) {
-            if($request->status == 2){
+            if ($request->status == 2) {
                 Mail::to($user->email)->send(new ApproveMail($user));
-            }
-            else{
+            } else {
                 Mail::to($user->email)->send(new RejectedMail($user));
 
             }

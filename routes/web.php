@@ -42,6 +42,7 @@ Route::middleware('auth')->group(function () {
         Route::get("/users/all", "showAlldUsers")->name("all.showAppliedUsers");
         Route::post("apply/store", "store")->name("apply.store");
         Route::post("apply/update", "update")->name("apply.update");
+        Route::get("/payment/user", "userPayment")->name("userPayment");
     });
 });
 

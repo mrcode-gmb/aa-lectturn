@@ -82,7 +82,7 @@
                                             <i class="fa fa-check-circle"></i>
                                         </div>
                                         <div class="circle-text">
-                                            <p>Hi, Abubakar Mrcode, Congratulation Your Application Is Inreview</p>
+                                            <p>Hi, {{Auth::user()->name}}, Congratulation Your Application Is Inreview</p>
                                         </div>
                                     </div>
                                 </div>
@@ -93,7 +93,7 @@
                                             <i class="fa fa-check-circle"></i>
                                         </div>
                                         <div class="circle-text">
-                                            <p>Hi, Abubakar Mrcode, Congratulation Your Application Is Approved</p>
+                                            <p>Hi, {{Auth::user()->name}}, Congratulation Your Application Is Approved</p>
                                         </div>
                                     </div>
                                 </div>
@@ -104,7 +104,7 @@
                                             <i class="fa fa-check-circle"></i>
                                         </div>
                                         <div class="circle-text">
-                                            <p>Hi, Abubakar Mrcode, Congratulation Your Application Is Rejected</p>
+                                            <p>Hi, {{Auth::user()->name}}, Congratulation Your Application Is Rejected</p>
                                         </div>
                                     </div>
                                 </div>
@@ -124,7 +124,7 @@
                                     </p>
                                 </div>
                                 <div class="dont-have">
-                                    <img src="{{ asset('asset/photos/GSU.jpg') }}" alt="">
+                                    <img src="{{ asset('asset/photos/WhatsApp_Image_2024-10-23_at_8.20.45_PM-removebg-preview.png') }}" alt="">
                                 </div>
                                 <div class="create-app">
                                     <a href="apply">
@@ -140,11 +140,11 @@
                         <div class="tabs" id="tabls">
                             <div class="full-chart">
                                 <div class="chart-title">
-                                    <h3>Hi Abubakar Mrcode</h3>
+                                    <h3>Hi {{Auth::user()->name}}</h3>
                                     <p>Please click the apply button to apply</p>
                                 </div>
                                 <div class="dont-have">
-                                    <img src="{{ asset('asset/photos/GSU.jpg') }}" alt="">
+                                    <img src="{{ asset('asset/photos/WhatsApp_Image_2024-10-23_at_8.20.45_PM-removebg-preview.png') }}" alt="">
                                 </div>
                                 <div class="create-app">
                                     <a href="apply">

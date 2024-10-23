@@ -24,7 +24,7 @@
             <div id="header">
                 <div class="header">
                     <div class="col header-left">
-                        <img src="{{ asset('asset/photos/GSU.jpg') }}" alt="" class="header-logo">
+                        <img src="{{ asset('asset/photos/WhatsApp_Image_2024-10-23_at_8.20.45_PM-removebg-preview.png') }}" alt="" class="header-logo">
                         <h4>ICoNDACoM</h4>
                     </div>
                     <div class="col header-right">
@@ -421,7 +421,7 @@
             <!-- footer  -->
             <section id="footer">
                 <div class="footer">
-                    <img src="./asset/photos/GSU.jpg" alt="">
+                    <img src="{{asset('asset/photos/WhatsApp_Image_2024-10-23_at_8.20.45_PM-removebg-preview.png')}}" alt="">
                     <div class="footer-header">
                         <p>Contact</p>
                         <h4>Visit Office Today</h4>

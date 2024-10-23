@@ -167,6 +167,8 @@ body {
   border: solid 1px #ddd;
   appearance: none;
   color: #777;
+  resize: none;
+  height: 100px;
   background: white;
 }
 

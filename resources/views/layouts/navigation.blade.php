@@ -31,7 +31,7 @@
                     <div class="nav-right">
                         <div class="nav-top">
                             <div class="nav-brand">
-                                <img src="{{ asset('asset/photos/GSU.jpg') }}" alt="Logo" />
+                                <img src="{{ asset('asset/photos/WhatsApp_Image_2024-10-23_at_8.20.45_PM-removebg-preview.png') }}" alt="Logo" />
                             </div>
                             <div class="nav-open" id="closesidebar" onclick="toggleSidebar(false, event)">
                                 <i class="fa fa-angle-left"></i>
@@ -77,6 +77,14 @@
                                         <div class="link-hover">
                                             <i class="fa fa-user-circle"></i>
                                             <span>Apply</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{route('userPayment')}}">
+                                        <div class="link-hover">
+                                            <i class="fa fa-brands fa-paypal"></i>
+                                            <span>Payment</span>
                                         </div>
                                     </a>
                                 </li>
