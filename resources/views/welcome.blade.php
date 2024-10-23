@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="asset/boxicons/css/boxicons.min.css">
     <link rel="stylesheet" href="asset/bootstrap-icons/bootstrap-icons.css">
     <link rel="stylesheet" href="{{ asset('asset/style.css') }}">
+
+
 </head>
 
 <body>
@@ -22,7 +24,7 @@
             <div id="header">
                 <div class="header">
                     <div class="col header-left">
-                        <img src="./asset/photos/GSU.jpg" alt="" class="header-logo">
+                        <img src="{{asset('asset/photos/GSU.jpg')}}" alt="" class="header-logo">
                         <h4>ICoNDACoM</h4>
                     </div>
                     <div class="col header-right">
@@ -119,7 +121,7 @@
 
 
                         <h3>ONLINE REGISTRATION LINK</h3>
-                        <a href="https://forms.gle/neHk63Pg1oQctobV8">https://forms.gle/neHk63Pg1oQctobV8</a>
+                        <a href="https://icondacom.com.ng/apply">https://icondacom.com.ng/apply</a>
                         <p>Register and plan ahead to attend.</p>
 
 
@@ -226,18 +228,14 @@
                         <h3>For more information</h3>
                         <p>
                             <a href="mailto:icondacom.mth@buk.edu.ng">icondacom.mth@buk.edu.ng</a> <br>
-                            <a href="tel:+2348067864645">+2348067864645</a>
-                        </p>
-                        <p>
                             <a href="mail:maaliyu@gsu.edu.ng">maaliyu@gsu.edu.ng</a><br>
-                            <a href="tel:+2348036143352">+2348036143352</a>
+                            <a href="mailto:hmuhd.mth@buk.edu.ng">hmuhd.mth@buk.edu.ng</a> <br>
                         </p>
                         <p>
-                            <a href="mailto:hmuhd.mth@buk.edu.ng">hmuhd.mth@buk.edu.ng</a> <br>
-                            <a href="tel:+2348036364455">+2348036364455</a>
+                            <a href="tel:+2348067864645">+2348067864645</a><br>
+                            <a href="tel:+2348036143352">+2348036143352</a><br>
+                            <a href="tel:+2348036364455">+2348036364455</a><br>
                             <a href="tel:+2347067377807">+2347067377807</a>
-
-
                         </p>
                     </div>
                 </div>
@@ -486,6 +484,7 @@
                                 <i class="fa fa-brands fa-youtube"></i>
                             </a>
                         </div>
+                        <p>Copyright &copy; All Right Reserved 2024, ICoNDACoM</p>
                         <p>Copyright &copy; All Right Reserved 2024, ICoNDACoM</p>
                     </div>
                 </div>
