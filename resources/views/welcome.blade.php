@@ -80,7 +80,7 @@
                         (ICoNDACoM 2025)</h4>
                     <!-- <p>Byadmin / Events, University / News &nbsp; <i class="fa fa-regular fa-comments"></i>&nbsp; 0</p> -->
                     <p>Organized by the Numerical Optimization Research Group,
-                        Bayero UniversityCorp.
+                        Bayero University.
                         Kano, Kano State, Nigeria.</p>
                 </div>
             </div>
@@ -92,8 +92,8 @@
                         IN APPLIED AND COMPUTATIONAL MATHEMATICS
                         (ICoNDACoM 2025)
                     </h4>
-                    <a href="{{ asset('asset/flierFapson2024.jpeg') }}">
-                        <img src="{{ asset('asset/flierFapson2024.jpeg') }}" alt="">
+                    <a href="{{ asset('asset/Screenshot from 2024-10-24 17-03-34.png') }}">
+                        <img src="{{ asset('asset/Screenshot from 2024-10-24 17-03-34.png') }}" alt="">
                     </a>
                     <div class="pro-secord-body-contents">
                         <p>Register now and participate in the 1st International Conference on New Developments in
@@ -112,7 +112,7 @@
 
                         <h3>When & Where</h3>
                         <p>Dates: 30th May to 1st June 2025 in Open Theatre, Old Campus, Bayero
-                            University, Kano, Kano State, Nigeria</p>
+                            University Kano, Kano State, Nigeria</p>
                         <p>CONFERENCE THEME: Applied Mathematics as tools for solving problems facing humanities</p>
 
 
@@ -164,33 +164,33 @@
                         <div class="list-title">
                             <h5>Onsite presenters:</h5>
                             <p>
-                                1. Faculty members: N25,000 <br>
-                                2. Students: N15,000 <br>
-                                3. International: 50USD<br>
+                                1. Faculty members: &#8358;30,000 <br>
+                                2. Students: &#8358;20,000 <br>
+                                3. International: 100USD<br>
                             </p>
                         </div>
 
                         <div class="list-title">
                             <h5>Online presenters:</h5>
                             <p>
-                                1. Faculty members: N15,000 <br>
-                                2. Students: N10,000 <br>
-                                3. International: 30USD<br>
+                                1. Faculty members: &#8358;25,000 <br>
+                                2. Students: &#8358;15,000 <br>
+                                3. International: 50USD<br>
                             </p>
                         </div>
 
                         <div class="list-title">
                             <h5>Participants without paper:</h5>
                             <p>
-                                1. Corporate: N30,000 <br>
-                                2. Individual:: N10,000 <br>
+                                1. Corporate: &#8358;40,000 <br>
+                                2. Individual:: &#8358;15,000 <br>
                             </p>
                         </div>
 
                         <div class="list-title">
                             <h5>Accompany:</h5>
                             <p>
-                                1. Individual:: N10,000 <br>
+                                1. Individual:: &#8358;10,000 <br>
                             </p>
                         </div>
 
@@ -209,7 +209,6 @@
                         <p>Host: Numerical Optimization Research Group, Bayero University Kano, Kano State, Nigeria
                             Co-host: GSU-Mathematics for Innovative Research (GSU-MIR) Group, Gombe State University,
                             Gombe, Gombe State, Nigeria</p>
-                        <a href="">www.gsu.edu.ng</a>
                         <h3>For more information</h3>
                         <p>
                             <a href="mailto:icondacom.mth@buk.edu.ng">icondacom.mth@buk.edu.ng</a> <br>
@@ -292,14 +291,14 @@
                 </div>
                 <div class="hosted-section">
                     <div class="hosted-section-gsu">
-                        <img src="{{ asset('asset/photos/aGSU.jpg') }}" alt="">
-                        <h4>Gombe State University (GSU)</h4>
-                        <a href="https://gsu.edu.ng">https://gsu.edu.ng</a>
-                    </div>
-                    <div class="hosted-section-gsu">
                         <img src="{{ asset('asset/photos/buk-removebg-preview.png') }}" alt="">
                         <h4>Bayero University Kano (BUK)</h4>
                         <a href="https://buk.edu.ng">https://buk.edu.ng</a>
+                    </div>
+                    <div class="hosted-section-gsu">
+                        <img src="{{ asset('asset/photos/aGSU.jpg') }}" alt="">
+                        <h4>Gombe State University (GSU)</h4>
+                        <a href="https://gsu.edu.ng">https://gsu.edu.ng</a>
                     </div>
                 </div>
             </div>
