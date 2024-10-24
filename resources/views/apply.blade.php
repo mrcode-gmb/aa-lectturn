@@ -26,7 +26,7 @@
                                                 <i class="fa fa-check-circle"></i>
                                             </div>
                                             <div class="circle-text">
-                                                <p>Hi, Abubakar Mrcode, Congratulation Your Application Is Inreview
+                                                <p>Hi, {{Auth::user()->name}}, Congratulation your application has been received successfully.
                                                 </p>
                                             </div>
                                         </div>
@@ -38,7 +38,7 @@
                                                 <i class="fa fa-check-circle"></i>
                                             </div>
                                             <div class="circle-text">
-                                                <p>Hi, Abubakar Mrcode, Congratulation Your Application Is Approved
+                                                <p>Hi, {{Auth::user()->name}}, Congratulation your application has been approved.
                                                 </p>
                                             </div>
                                         </div>
@@ -50,7 +50,7 @@
                                                 <i class="fa fa-check-circle"></i>
                                             </div>
                                             <div class="circle-text">
-                                                <p>Hi, Abubakar Mrcode, Congratulation Your Application Is Rejected
+                                                <p>Hi, {{Auth::user()->name}}, Sorry your application cannot be considered.
                                                 </p>
                                             </div>
                                         </div>
@@ -64,8 +64,7 @@
                             <div class="tabs" id="tabls">
                                 <div class="full-chart">
                                     <div class="chart-title">
-                                        <h3>Hi Abubakar Mrcode</h3>
-                                        <p>Please click the apply button to apply as donar or hospital</p>
+                                        <h3>Hi {{Auth::user()->name}}</h3>
                                     </div>
                                     <form class="form-apply mt-1" method="POST" action="{{ route('apply.store') }}"
                                         enctype="multipart/form-data">
@@ -148,8 +147,7 @@
                                                                 <input type="number" placeholder=" "
                                                                     value="{{ old('mobile_number') }}"
                                                                     name="mobile_number">
-                                                                <label for="">WhatsApp phone number <span
-                                                                        class="text-danger">*</span></label>
+                                                                <label for="">WhatsApp phone number</label>
                                                             </div>
                                                             <x-input-error :messages="$errors->get('mobile_number')" />
                                                         </div>
@@ -191,16 +189,6 @@
                                                     <div>
                                                         <div class="form-alt">
                                                             <div class="form-group">
-                                                                <input type="text" value="{{ old('expertise') }}"
-                                                                    placeholder=" " name="expertise">
-                                                                <label for="">Expertise / research
-                                                                    interests</label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        <div class="form-alt">
-                                                            <div class="form-group">
                                                                 <input type="text" value="{{ old('nationality') }}"
                                                                     placeholder=" " name="nationality">
                                                                 <label for="">Nationality</label>
@@ -209,7 +197,8 @@
                                                     </div>
                                                     <div>
                                                         <div class="form-group">
-                                                            <select name="papers_present" id="papers_present" onchange="selectType(true)">
+                                                            <select name="do_you" id="papers_present"
+                                                                onchange="selectType(true)">
                                                                 <option value="" hidden>Do you have papers to
                                                                     present ?</option>
                                                                 <option value="Yes">Yes</option>
@@ -220,15 +209,31 @@
                                                         </div>
                                                         <p class="caption-input">If yes please make sure you upload the
                                                             papers to present</p>
-                                                        <x-input-error :messages="$errors->get('papers_present')" />
+                                                        <x-input-error :messages="$errors->get('do_you')" />
                                                     </div>
                                                     <div class="d-none" id="fileInput">
-                                                        <div class="form-group">
-                                                            <input type="file" placeholder=" "
-                                                                value="{{ old('file_upload') }}" name="file_upload">
-                                                            <label for="">Upload papers to present</label>
+                                                        <div>
+                                                            <div class="form-alt">
+                                                                <div class="form-group">
+                                                                    <input type="text"
+                                                                        value="{{ old('title_presentation') }}" placeholder=" "
+                                                                        name="title_presentation">
+                                                                    <label for="">Title of Presentation <span
+                                                                            class="text-danger">*</span></label>
+                                                                </div>
+                                                                <x-input-error :messages="$errors->get('title_presentation')" />
+                                                            </div>
                                                         </div>
-                                                        <x-input-error :messages="$errors->get('file_upload')" />
+                                                        <div>
+                                                            <div class="form-group">
+                                                                <input type="file" placeholder=" "
+                                                                    value="{{ old('file_upload') }}"
+                                                                    name="file_upload">
+                                                                <label for="">Upload papers to present <span
+                                                                    class="text-danger">*</span></label>
+                                                            </div>
+                                                            <x-input-error :messages="$errors->get('file_upload')" />
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="mt-1">
@@ -250,13 +255,12 @@
     </section>
 
     <script>
-        const selectType = (bool)=>{
+        const selectType = (bool) => {
             const select = document.getElementById("papers_present").value;
             const fileInput = document.getElementById("fileInput");
-            if(select == "Yes"){
+            if (select == "Yes") {
                 fileInput.style.display = "block";
-            }
-            else{
+            } else {
                 fileInput.style.display = "none";
             }
         }

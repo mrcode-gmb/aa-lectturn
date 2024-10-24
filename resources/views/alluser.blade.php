@@ -29,7 +29,7 @@
                             <x-auth-session-status class="mb-4" :status="session('success')" />
                             <div class="table-st" id="bloodBanks">
                                 <div class="table-st-head">
-                                    <h4>Users Applied</h4>
+                                    <h4>Users</h4>
                                     <div class="input-seach">
                                         <input type="text" placeholder="Search" onkeyup="searchBlood(true)"
                                             id="searchBarBlood">

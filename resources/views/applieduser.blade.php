@@ -22,7 +22,7 @@
                                         <i class="fa fa-users"></i>
                                     </div>
                                     <div class="circle-text">
-                                        <p>Users who apply the comprense waitting you {{ Auth::user()->name }} </p>
+                                        <p>Users who applied for the conference and waitting for neccessary action </p>
                                     </div>
                                 </div>
                             </div>
@@ -45,7 +45,7 @@
                                             <th>TItle</th>
                                             <th>Paper Prensentation Title</th>
                                             <th>Occupation</th>
-                                            <th>Expertise</th>
+                                            <th>Title of Presentation</th>
                                             <th>Organization</th>
                                             <th>Nationality</th>
                                             <th>Paper Prensentation File</th>
@@ -62,12 +62,17 @@
                                                 <td>{{ $applieduser['title'] }}</td>
                                                 <td>{{ $applieduser['papers_present_name'] }}</td>
                                                 <td>{{ $applieduser['occupation'] }}</td>
-                                                <td>{{ $applieduser['expertise'] }}</td>
+                                                <td>{{ $applieduser['title_presentation'] }}</td>
                                                 <td>{{ $applieduser['organization'] }}</td>
                                                 <td>{{ $applieduser['nationality'] }}</td>
                                                 <td>
+                                                    @if ($applieduser['papers_present'] == 'no data')
+                                                        No file
+                                                    @else
+
                                                     <a href="{{ Storage::url($applieduser['papers_present']) }}">Download
                                                         | View File</a>
+                                                    @endif
                                                 </td>
                                                 <td>{{ $applieduser['date'] }}</td>
                                                 <td>
@@ -86,32 +91,36 @@
                                                     @endif
                                                 </td>
                                                 <td class="text-center">
-                                                    <a href="#!" onclick="openModal({{$key+1}})">
+                                                    <a href="#!" onclick="openModal({{ $key + 1 }})">
                                                         <i class="fa fa-edit view"></i>
                                                     </a>
                                                 </td>
 
 
-                                                <div class="modal d-none" id="modal{{$key+1}}">
+                                                <div class="modal d-none" id="modal{{ $key + 1 }}">
                                                     <div class="modal-dialog">
                                                         <div class="modal-head">
                                                             <p>Approved Or Reject </p>
                                                         </div>
-                                                        <form class="modal-body" method="POST" action="{{route("apply.update")}}">
+                                                        <form class="modal-body" method="POST"
+                                                            action="{{ route('apply.update') }}">
                                                             @csrf
                                                             <div class="form-body">
                                                                 <div class="form-group">
                                                                     <select name="status" id="">
-                                                                        <option value="" hidden>Choose Status</option>
+                                                                        <option value="" hidden>Choose Status
+                                                                        </option>
                                                                         <option value="2">Approve</option>
                                                                         <option value="3">Reject</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
-                                                            <input type="text" name="user_id" value="{{$applieduser['user_id']}}" hidden>
+                                                            <input type="text" name="user_id"
+                                                                value="{{ $applieduser['user_id'] }}" hidden>
                                                             <div class="modal-footer">
                                                                 <button>Save</button>
-                                                                <button class="delete" type="button" onclick="closeModal({{$key+1}})">Close</button>
+                                                                <button class="delete" type="button"
+                                                                    onclick="closeModal({{ $key + 1 }})">Close</button>
                                                             </div>
                                                         </form>
                                                     </div>

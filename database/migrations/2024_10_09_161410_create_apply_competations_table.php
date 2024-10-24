@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string("title")->nullable();
             $table->string("papers_present_name")->nullable();
             $table->string("occupation")->nullable();
-            $table->string("expertise")->nullable();
+            $table->string("title_presentation")->nullable();
             $table->string("organization")->nullable();
             $table->string("nationality")->nullable();
             $table->string("papers_present")->nullable();
