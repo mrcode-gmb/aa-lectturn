@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Payment;
 use App\Models\User;
 use App\Mail\UserStored;
 use App\Mail\ApproveMail;
@@ -81,7 +82,7 @@ class ApplyCompetationController extends Controller
             "expertise" => $request->expertise,
             "organization" => $request->organization,
             "nationality" => $request->nationality,
-            "papers_present" => $request->file("file_upload")->store("uploads", "public"),
+            "papers_present" => $request->file_upload != "" ? $request->file("file_upload")->store("uploads", "public") : Null,
         ]);
         if ($apply) {
             User::where("id", Auth::user()->id)->update([
@@ -188,5 +189,29 @@ class ApplyCompetationController extends Controller
         } else {
             return view("dashboard");
         }
+    }
+
+    public function userPaymentPayment(Request $request)
+    {
+        $request->validate([
+            'papers_present' => "required",
+            'conference_amount' => "required",
+            'file_upload' => "required",
+        ]);
+        $payment = Payment::where("user_id", Auth::user()->id)->count();
+
+        if ($payment > 0) {
+            return redirect()->back()->with("success", "Already paid");
+        } else {
+            Payment::create([
+                'user_id' => Auth::user()->id,
+                'papers_present' => $request->papers_present,
+                'conference_amount' => $request->conference_amount,
+                'file_upload' => $request->file_upload != "" ? $request->file("file_upload")->store("uploads", "public") : Null,
+                'payment_comment' => $request->payment_comment,
+            ]);
+            return redirect()->back()->with("success", "Congratulation your reciept has been submitted successful");
+        }
+
     }
 }

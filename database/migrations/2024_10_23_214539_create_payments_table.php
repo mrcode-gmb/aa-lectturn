@@ -15,8 +15,11 @@ return new class extends Migration
         Schema::create('payments', function (Blueprint $table) {
             $table->id();
             $table->foreignIdFor(User::class)->constrained();
-            $table->string("file");
-            $table->string("comment")->nullable();
+            $table->string("papers_present");
+            $table->string("conference_amount")->nullable();
+            $table->string("payment_comment")->nullable();
+            $table->string("file_upload")->nullable();
+            $table->string("status")->default(0);
             $table->timestamps();
         });
     }

@@ -60,49 +60,188 @@
                             </div>
                         </div>
                     @else
-                        <div class="now-apply">
-                            <div class="tabs" id="tabls">
-                                <div class="full-chart">
-                                    <div class="chart-title">
-                                        <h3>Hi Abubakar Mrcode</h3>
-                                        <p>Make sure you have complete the payment before share your reciept</p>
+                        @if (Auth::user()->payment->user_id ?? false)
+                            <div class="was-apply">
+                                <div class="tabs" id="tabls">
+                                    <div class="full-chart">
+                                        <div class="chart-title flex-class">
+                                            <div class="circle-success">
+                                                <i class="fa fa-brands fa-paypal"></i>
+                                            </div>
+                                            <div class="circle-text">
+                                                <p>Payment Reciepts</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <form class="form-apply mt-1" method="POST" action="{{ route('apply.store') }}"
-                                        enctype="multipart/form-data">
-                                        @csrf
-                                        <div class="form-body form-padding-0">
-                                            <div class="form-donor-user" id="donorCheck">
-                                                <div class="grid grid:3 gap10">
-                                                    <div>
-                                                        <div class="form-group">
-                                                            <input type="file" placeholder=" "
-                                                                value="{{ old('file_upload') }}" name="file_upload">
-                                                            <label for="">Upload Reciept</label>
+                                    <x-auth-session-status class="mb-4" :status="session('success')" />
+                                    <div class="table-st" id="bloodBanks">
+                                        <div class="table-st-head">
+                                            <h4>Payment Reciepts</h4>
+                                            <div class="input-seach">
+                                                <input type="text" placeholder="Search" onkeyup="searchBlood(true)"
+                                                    id="searchBarBlood">
+                                            </div>
+                                        </div>
+                                        <div class="table-body">
+                                            <table class="student-data">
+                                                <tr class="border">
+                                                    <th>S/N</th>
+                                                    <th>Full name</th>
+                                                    <th>Email</th>
+                                                    <th>Date</th>
+                                                </tr>
+                                                <tr class="searchtab rowBlood">
+                                                    <td>{{ 1 }}</td>
+                                                    <td>{{ Auth::user()->name }}</td>
+                                                    <td>{{ Auth::user()->payment->papers_present }}</td>
+                                                    <td>{{ Auth::user()->payment->conference_amount }}</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        @else
+                            <div class="now-apply">
+                                <div class="tabs" id="tabls">
+                                    <div class="full-chart">
+                                        <div class="chart-title">
+                                            <h3>Hi Abubakar Mrcode</h3>
+                                            <p>Make sure you have complete the payment before share your reciept</p>
+                                        </div>
+                                        <form class="form-apply mt-1" method="POST"
+                                            action="{{ route('userPaymentPayment') }}" enctype="multipart/form-data">
+                                            @csrf
+                                            <div class="form-body form-padding-0">
+                                                <div class="form-donor-user" id="donorCheck">
+                                                    <div class="grid grid:3 gap10">
+                                                        <div>
+                                                            <div class="form-group">
+                                                                <select name="papers_present" id="papers_present"
+                                                                    onchange="selectValue(true)">
+                                                                    <option value="" hidden>Conference Type
+                                                                    </option>
+                                                                    <option value="Onsite presenters">Onsite presenters
+                                                                    </option>
+                                                                    <option value="Online presenters">Online presenters
+                                                                    </option>
+                                                                    <option value="Participants without paper">
+                                                                        Participants
+                                                                        without paper</option>
+                                                                    <option value="Accompany">Accompany</option>
+                                                                </select>
+                                                                <label for=""> <span
+                                                                        class="text-danger">*</span></label>
+                                                            </div>
+                                                            <x-input-error :messages="$errors->get('papers_present')" />
                                                         </div>
-                                                        <x-input-error :messages="$errors->get('file_upload')" />
-                                                    </div>
-                                                    <div>
-                                                        <div class="form-group">
-                                                            <textarea name="" placeholder="comment (Optional)" id="" cols="30" rows="10"></textarea>
+                                                        <div>
+                                                            <div class="form-group">
+                                                                <select name="conference_amount" id="conference_amount">
+                                                                    <option value="" hidden>Conference Amount Fee
+                                                                    </option>
+                                                                </select>
+                                                                <label for=""> <span
+                                                                        class="text-danger">*</span></label>
+                                                            </div>
+                                                            <x-input-error :messages="$errors->get('conference_amount')" />
                                                         </div>
-                                                        <x-input-error :messages="$errors->get('comment')" />
+                                                        <div>
+                                                            <div class="form-group">
+                                                                <input type="file" placeholder=" "
+                                                                    value="{{ old('file_upload') }}" name="file_upload">
+                                                                <label for="">Upload Payment Reciept</label>
+                                                            </div>
+                                                            <x-input-error :messages="$errors->get('file_upload')" />
+                                                        </div>
+                                                        <div>
+                                                            <div class="form-group">
+                                                                <textarea name="payment_comment" placeholder="comment (Optional)"></textarea>
+                                                            </div>
+                                                            <x-input-error :messages="$errors->get('payment_comment')" />
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="mt-1">
-                                                    <div class="form-group form-btn-look">
-                                                        <button>Submit</button>
+                                                    <div class="mt-1">
+                                                        <div class="form-group form-btn-look">
+                                                            <button>Submit</button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </form>
+                                        </form>
+                                    </div>
+                                    <br>
                                 </div>
-                                <br>
                             </div>
-                        </div>
+                        @endif
                     @endif
                 </div>
             </section>
         </div>
     </section>
+    <script>
+        const selectValue = (bool) => {
+
+            const select = document.getElementById("papers_present").value;
+            const conference_amount = document.getElementById("conference_amount");
+
+            const array = [{
+                    type: 'Onsite presenters',
+                    name: 'Faculty members: N25,000',
+                },
+                {
+                    type: 'Onsite presenters',
+                    name: 'Students: N15,000',
+                },
+                {
+                    type: 'Onsite presenters',
+                    name: 'International: 50USD',
+                },
+
+                // Online presenters
+                {
+                    type: 'Online presenters',
+                    name: 'Faculty members: N15,000',
+                },
+                {
+                    type: 'Online presenters',
+                    name: 'Students: N10,000',
+                },
+                {
+                    type: 'Online presenters',
+                    name: 'International: 30USD',
+                },
+
+                // Participants without paper
+                {
+                    type: 'Participants without paper',
+                    name: 'Corporate: N30,000',
+                },
+                {
+                    type: 'Participants without paper',
+                    name: 'Individual:: N10,000',
+                },
+
+                // Accompany
+                {
+                    type: 'Accompany',
+                    name: 'Individual: N10,000',
+                },
+
+            ]
+
+            const filteredPlans = array.filter(plan =>
+                (select ? plan.type === select : true)
+            );
+            conference_amount.innerHTML = '';
+
+            filteredPlans.forEach((options) => {
+                const optionElement = document.createElement('option');
+                optionElement.textContent = options.name; // Set the display text
+                optionElement.value = options.name; // Set the value attribute
+                conference_amount.appendChild(optionElement);
+            });
+
+        }
+    </script>
 </x-app-layout>

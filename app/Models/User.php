@@ -48,4 +48,8 @@ class User extends Authenticatable
     {
         return $this->hasOne(ApplyCompetation::class);
     }
+    public function payment()
+    {
+        return $this->hasOne(Payment::class);
+    }
 }

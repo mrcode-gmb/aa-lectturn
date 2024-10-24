@@ -209,7 +209,7 @@
                                                     </div>
                                                     <div>
                                                         <div class="form-group">
-                                                            <select name="papers_present">
+                                                            <select name="papers_present" id="papers_present" onchange="selectType(true)">
                                                                 <option value="" hidden>Do you have papers to
                                                                     present ?</option>
                                                                 <option value="Yes">Yes</option>
@@ -222,7 +222,7 @@
                                                             papers to present</p>
                                                         <x-input-error :messages="$errors->get('papers_present')" />
                                                     </div>
-                                                    <div>
+                                                    <div class="d-none" id="fileInput">
                                                         <div class="form-group">
                                                             <input type="file" placeholder=" "
                                                                 value="{{ old('file_upload') }}" name="file_upload">
@@ -232,13 +232,6 @@
                                                     </div>
                                                 </div>
                                                 <div class="mt-1">
-                                                    <div class="checkBox">
-                                                        <input type="checkbox">
-                                                        <span>Accept
-                                                            <Link>Terms</Link> &
-                                                            <Link>Condition</Link>
-                                                        </span>
-                                                    </div>
                                                     <div class="form-group form-btn-look">
                                                         <button>Submit</button>
                                                     </div>
@@ -255,4 +248,17 @@
             </section>
         </div>
     </section>
+
+    <script>
+        const selectType = (bool)=>{
+            const select = document.getElementById("papers_present").value;
+            const fileInput = document.getElementById("fileInput");
+            if(select == "Yes"){
+                fileInput.style.display = "block";
+            }
+            else{
+                fileInput.style.display = "none";
+            }
+        }
+    </script>
 </x-app-layout>
