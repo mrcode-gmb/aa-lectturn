@@ -22,7 +22,7 @@
                                         <i class="fa fa-users"></i>
                                     </div>
                                     <div class="circle-text">
-                                        <p>Users who applied for the conference and waitting for neccessary action </p>
+                                        <p>Users who applied for the conference and waiting for neccessary action </p>
                                     </div>
                                 </div>
                             </div>

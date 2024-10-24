@@ -82,7 +82,8 @@
                                             <i class="fa fa-check-circle"></i>
                                         </div>
                                         <div class="circle-text">
-                                            <p>Hi, {{Auth::user()->name}}, Congratulation Your Application Is Inreview</p>
+                                            <p>Hi, {{ Auth::user()->name }}, Congratulation your application is being
+                                                proccessed </p>
                                         </div>
                                     </div>
                                 </div>
@@ -93,7 +94,9 @@
                                             <i class="fa fa-check-circle"></i>
                                         </div>
                                         <div class="circle-text">
-                                            <p>Hi, {{Auth::user()->name}}, Congratulation Your Application Is Approved</p>
+                                            <p>Hi, {{ Auth::user()->name }}, Congratulation your application has been
+                                                approved.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -104,7 +107,9 @@
                                             <i class="fa fa-check-circle"></i>
                                         </div>
                                         <div class="circle-text">
-                                            <p>Hi, {{Auth::user()->name}}, Congratulation Your Application Is Rejected</p>
+                                            <p>Hi, {{ Auth::user()->name }}, Sorry your application cannot be
+                                                considered.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -124,7 +129,8 @@
                                     </p>
                                 </div>
                                 <div class="dont-have">
-                                    <img src="{{ asset('asset/photos/WhatsApp_Image_2024-10-23_at_8.20.45_PM-removebg-preview.png') }}" alt="">
+                                    <img src="{{ asset('asset/photos/WhatsApp_Image_2024-10-23_at_8.20.45_PM-removebg-preview.png') }}"
+                                        alt="">
                                 </div>
                                 <div class="create-app">
                                     <a href="apply">
@@ -140,11 +146,12 @@
                         <div class="tabs" id="tabls">
                             <div class="full-chart">
                                 <div class="chart-title">
-                                    <h3>Hi {{Auth::user()->name}}</h3>
+                                    <h3>Hi {{ Auth::user()->name }}</h3>
                                     <p>Please click the apply button to apply</p>
                                 </div>
                                 <div class="dont-have">
-                                    <img src="{{ asset('asset/photos/WhatsApp_Image_2024-10-23_at_8.20.45_PM-removebg-preview.png') }}" alt="">
+                                    <img src="{{ asset('asset/photos/WhatsApp_Image_2024-10-23_at_8.20.45_PM-removebg-preview.png') }}"
+                                        alt="">
                                 </div>
                                 <div class="create-app">
                                     <a href="apply">
@@ -167,7 +174,7 @@
                 percent = document.querySelector("#percent");
 
             let loaderStart = 0,
-                loaderEnd = {{ $allUsers  < 1 ? 1 :  $allUsers }},
+                loaderEnd = {{ $allUsers < 1 ? 1 : $allUsers }},
                 loaderTime = 60;
 
             let start = setInterval(() => {
@@ -188,7 +195,7 @@
                 percent1 = document.querySelector("#percent1");
 
             let loaderStart1 = 0,
-                loaderEnd1 = {{$allApprovedUsers < 1 ? 1 : $allApprovedUsers}},
+                loaderEnd1 = {{ $allApprovedUsers < 1 ? 1 : $allApprovedUsers }},
                 loaderTime1 = 60;
 
             let start1 = setInterval(() => {
@@ -211,7 +218,7 @@
                 percent2 = document.querySelector("#percent2");
 
             let loaderStart2 = 0,
-                loaderEnd2 = {{$allPendingUsers < 1 ? 1 : $allPendingUsers}},
+                loaderEnd2 = {{ $allPendingUsers < 1 ? 1 : $allPendingUsers }},
                 loaderTime2 = 60;
 
             let start2 = setInterval(() => {
@@ -232,7 +239,7 @@
                 percent3 = document.querySelector("#percent3");
 
             let loaderStart3 = 0,
-                loaderEnd3 = {{$allRejectedUsers < 1 ? 1 : $allRejectedUsers}},
+                loaderEnd3 = {{ $allRejectedUsers < 1 ? 1 : $allRejectedUsers }},
                 loaderTime3 = 60;
 
             let start3 = setInterval(() => {

@@ -81,7 +81,7 @@ class ApplyCompetationController extends Controller
             "mobile_number" => $request->mobile_number,
             "papers_present_name" => $request->papers_present_name,
             "occupation" => $request->occupation,
-            "expertise" => $request->title_presentation,
+            "title_presentation" => $request->title_presentation,
             "organization" => $request->organization,
             "nationality" => $request->nationality,
             "papers_present" => $request->file_upload != "" ? $request->file("file_upload")->store("uploads", "public") : Null,
