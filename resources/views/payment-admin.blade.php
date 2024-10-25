@@ -9,7 +9,7 @@
                             <i class="fa fa-home"></i>
                             <div class="db">
                                 <h4>Dashboard / &nbsp;</h4>
-                                <p>Registration</p>
+                                <p>Payment Reciepts</p>
                             </div>
                         </div>
                     </div>
@@ -19,17 +19,17 @@
                             <div class="full-chart">
                                 <div class="chart-title flex-class">
                                     <div class="circle-success">
-                                        <i class="fa fa-users"></i>
+                                        <i class="fa fa-brands fa-paypal"></i>
                                     </div>
                                     <div class="circle-text">
-                                        <p>Users who applied for the conference and waiting for neccessary action </p>
+                                        <p>Unconfirmed Registrations: Payment Pending</p>
                                     </div>
                                 </div>
                             </div>
                             <x-auth-session-status class="mb-4" :status="session('success')" />
                             <div class="table-st" id="bloodBanks">
                                 <div class="table-st-head">
-                                    <h4>Users Applied</h4>
+                                    <h4>Payment Reciepts</h4>
                                     <div class="input-seach">
                                         <input type="text" placeholder="Search" onkeyup="searchBlood(true)"
                                             id="searchBarBlood">
@@ -41,14 +41,10 @@
                                             <th>S/N</th>
                                             <th>Full name</th>
                                             <th>Email</th>
-                                            <th>Mobile Number</th>
-                                            <th>TItle</th>
-                                            <th>Paper Prensentation Title</th>
-                                            <th>Occupation</th>
-                                            <th>Title of Presentation</th>
-                                            <th>Organization</th>
-                                            <th>Nationality</th>
-                                            <th>Paper Prensentation File</th>
+                                            <th>Conference type</th>
+                                            <th>Conference amount fee</th>
+                                            <th>Comment</th>
+                                            <th>Payment reciept</th>
                                             <th>Date</th>
                                             <th>Status</th>
                                             <th>Accept</th>
@@ -58,26 +54,22 @@
                                                 <td>{{ $key + 1 }}</td>
                                                 <td>{{ $applieduser['name'] }}</td>
                                                 <td>{{ $applieduser['email'] }}</td>
-                                                <td>{{ $applieduser['mobile_number'] }}</td>
-                                                <td>{{ $applieduser['title'] }}</td>
-                                                <td>{{ $applieduser['papers_present_name'] }}</td>
-                                                <td>{{ $applieduser['occupation'] }}</td>
-                                                <td>{{ $applieduser['title_presentation'] }}</td>
-                                                <td>{{ $applieduser['organization'] }}</td>
-                                                <td>{{ $applieduser['nationality'] }}</td>
+                                                <td>{{ $applieduser['conference_type'] }}</td>
+                                                <td>{{ $applieduser['conference_amount'] }}</td>
+                                                <td>{{ $applieduser['payment_comment'] }}</td>
                                                 <td>
-                                                    @if ($applieduser['papers_present'] == 'no data')
+                                                    @if ($applieduser['file_upload'] == 'no data')
                                                         No file
                                                     @else
 
-                                                    <a href="{{ Storage::url($applieduser['papers_present']) }}">Download | View</a>
+                                                    <a href="{{ Storage::url($applieduser['file_upload']) }}">Download | View</a>
                                                     @endif
                                                 </td>
                                                 <td>{{ $applieduser['date'] }}</td>
                                                 <td>
                                                     @if ($applieduser['status'] == 1)
                                                         <div class="status">
-                                                            Inreview
+                                                            Pending
                                                         </div>
                                                     @elseif ($applieduser['status'] == 2)
                                                         <div class="status-approved">
@@ -102,7 +94,7 @@
                                                             <p>Approved Or Reject </p>
                                                         </div>
                                                         <form class="modal-body" method="POST"
-                                                            action="{{ route('apply.update') }}">
+                                                            action="{{ route('apply.paymentStatus') }}">
                                                             @csrf
                                                             <div class="form-body">
                                                                 <div class="form-group">

@@ -233,7 +233,7 @@ body {
   border: none;
   outline: none;
   font-size: 16px;
-  color: white;
+  color: #333;
   background: var(--main-bg-3d);
   border-radius: 4px;
   cursor: pointer;

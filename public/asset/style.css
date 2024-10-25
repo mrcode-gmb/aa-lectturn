@@ -586,6 +586,24 @@ h2 {
 
 }
 
+.pro-body-linkedd{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+.pro-body-linkedd a{
+    background: white;
+    padding: 15px 25px;
+    font-size: 17px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: #333;
+    border-radius: 10px;
+}
+.pro-body-linkedd a:hover{
+    background: var(--main-color);
+    color: white;
+}
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (max-width: 1224px) {
     .hosted-section-gsu img{

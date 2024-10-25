@@ -16,7 +16,7 @@
             <p style="color: #555555; font-size: 16px;">If you have any questions or need further clarification, please
                 feel free to contact us.</p>
             <br>
-            <p style="color: #555555; font-size: 16px;">Thank you for participating in ICoNDACoM. We wish you the best
+            <p style="color: #555555; font-size: 16px;">Thank you for register in ICoNDACoM. We wish you the best
                 of luck!</p>
         </div>
 

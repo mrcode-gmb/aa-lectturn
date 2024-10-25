@@ -82,6 +82,11 @@
                     <p>Organized by the Numerical Optimization Research Group,
                         Bayero University.
                         Kano, Kano State, Nigeria.</p>
+
+
+                    <div class="pro-body-linkedd">
+                        <a href="https://icondacom.com.ng/apply">Appy Now</a>
+                    </div>
                 </div>
             </div>
 

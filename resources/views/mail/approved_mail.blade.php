@@ -16,7 +16,7 @@
             <b style="color: #333333; font-size: 16px;">Thank you for participating in ICoNDACoM. We wish you the best
                 of luck!</b>
             <br><br>
-            <p style="color: #555555; font-size: 16px;">Thank you for participating in ICoNDACoM. We wish you the best
+            <p style="color: #555555; font-size: 16px;">Thank you for register in ICoNDACoM. We wish you the best
                 of luck!</p>
         </div>
 

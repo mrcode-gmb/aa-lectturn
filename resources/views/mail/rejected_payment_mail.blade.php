@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>ICoNDACoM Application Notification</title>
+    <title>ICoNDACoM Payment Notification</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -11,19 +11,16 @@
     <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff; padding: 20px; border-radius: 8px;">
         <div class="mail-sender" style="text-align: center;">
             <h2 style="color: #333333; font-weight: 600;">Hi, {{ $user->name }}!</h2>
-            <p style="color: #555555; font-size: 16px;">Congratulations! Your application for ICoNDACoM has been received
-                successfully.</p>
-            <p style="color: #555555; font-size: 16px;">Our team will carefully review your application, and you will be
-                notified once the review process is complete.</p>
-            <br>
-            <b style="color: #333333; font-size: 16px;">Thank you for register in ICoNDACoM. We wish you the best
-                of luck!</b>
+            <p style="color: #555555; font-size: 16px;">We regret to inform you that your payment for ICoNDACoM has been
+                <b style="color: red;">Rejected</b>.</p>
+            <b style="color: #333333; font-size: 16px;">Please check your payment reciept and try again.</b>
             <br><br>
+            <p style="color: #555555; font-size: 16px;">If you have any questions or need assistance, feel free to contact our support team.</p>
         </div>
 
         <div class="mail-base-regard" style="text-align: center; margin-top: 30px;">
             <p style="color: #333333; font-size: 14px;"><b>Best Regards,</b> <br>
-                By ICoNDACoM</p>
+                ICoNDACoM Team</p>
         </div>
 
         <div class="mail-center"

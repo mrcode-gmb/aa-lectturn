@@ -39,9 +39,11 @@ Route::middleware('auth')->group(function () {
     Route::controller(ApplyCompetationController::class)->group(function () {
         Route::get("/apply", "index")->name("apply");
         Route::get("/users/applied", "showAppliedUsers")->name("apply.showAppliedUsers");
+        Route::get("/users/payment/histories", "showPaymentHistories")->name("apply.showPaymentHistories");
         Route::get("/users/all", "showAlldUsers")->name("all.showAppliedUsers");
         Route::post("apply/store", "store")->name("apply.store");
         Route::post("apply/update", "update")->name("apply.update");
+        Route::post("apply/payment-status", "paymentStatus")->name("apply.paymentStatus");
         Route::get("/payment/user", "userPayment")->name("userPayment");
         Route::post("/payment/payment", "userPaymentPayment")->name("userPaymentPayment");
     });

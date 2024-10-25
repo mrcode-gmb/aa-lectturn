@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Payment;
+use App\Mail\RejectedPaymentMail;
 use App\Models\User;
+use App\Models\Payment;
 use App\Mail\UserStored;
 use App\Mail\ApproveMail;
 use App\Mail\RejectedMail;
 use Illuminate\Http\Request;
+use App\Mail\ApprovePaymentMail;
 use App\Models\ApplyCompetation;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
@@ -63,12 +65,12 @@ class ApplyCompetationController extends Controller
         $request->validate([
             "title" => "required",
             "papers_present_name" => "required",
-            'do_you'=>"required"
+            'do_you' => "required"
         ]);
 
         if ($request->do_you == "Yes") {
             $request->validate([
-                'file_upload' => 'required|file|mimes:jpg,png,pdf,doc,docx', // You can set the file types and size limit
+                'file_upload' => 'required|file|mimes:jpg,png,pdf,doc,docx|max:3048', // You can set the file types and size limit
                 'title_presentation' => "required",
             ]);
 
@@ -198,7 +200,7 @@ class ApplyCompetationController extends Controller
         $request->validate([
             'papers_present' => "required",
             'conference_amount' => "required",
-            'file_upload' => "required",
+            'file_upload' => "required|file|max:3048",
         ]);
         $payment = Payment::where("user_id", Auth::user()->id)->count();
 
@@ -216,4 +218,51 @@ class ApplyCompetationController extends Controller
         }
 
     }
+    public function showPaymentHistories()
+    {
+        if (Auth::user()->role == 1) {
+            $payment = Payment::with('user')->orderBy("id", "DESC")->get()->transform(fn($data) => [
+                "id" => encrypt($data->id) ?? null,
+                "user_id" => encrypt($data->user_id) ?? null,
+                "name" => $data->user->name ?? null,
+                "email" => $data->user->email ?? null,
+                "conference_type" => $data->papers_present ?? "no data",
+                "conference_amount" => $data->conference_amount ?? "no data",
+                "payment_comment" => $data->payment_comment ?? "no data",
+                "file_upload" => $data->file_upload ?? "no data",
+                "status" => $data->status,
+                "date" => $data->created_at->format("M d, Y h:i A"),
+            ]);
+            return view("payment-admin", ["appliedusers" => $payment]);
+        } else {
+            return view("dashboard");
+        }
+    }
+
+    public function paymentStatus(Request $request, Payment $Payment)
+    {
+        //
+        $request->validate([
+            "status" => "required",
+            "user_id" => "required",
+        ]);
+
+        $user = User::where("id", decrypt($request->user_id))->first();
+
+        $userStatus = Payment::where("user_id", decrypt($request->user_id))->update([
+            "status" => $request->status
+        ]);
+        if ($userStatus) {
+            if ($request->status == 2) {
+                Mail::to($user->email)->send(new ApprovePaymentMail($user));
+            } else {
+                $userStatus = Payment::where("user_id", decrypt($request->user_id))->delete();
+                Mail::to($user->email)->send(new RejectedPaymentMail($user));
+
+            }
+            return redirect()->back()->with("success", "Your status has been change successfull");
+        }
+        return redirect()->back()->with("success", "Something went wrong");
+    }
 }
+

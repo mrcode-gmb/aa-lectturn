@@ -13,53 +13,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="str">
-                        <x-auth-session-status class="mb-4" :status="session('success')" />
-                    </div>
                     @if (Auth::user()->status != 0)
-                        <div class="was-apply">
-                            <div class="tabs" id="tabls">
-                                @if (Auth::user()->status == 1)
-                                    <div class="full-chart">
-                                        <div class="chart-title flex-class">
-                                            <div class="circle-pending">
-                                                <i class="fa fa-check-circle"></i>
-                                            </div>
-                                            <div class="circle-text">
-                                                <p>Hi, Abubakar Mrcode, Congratulation Your Application Is Inreview
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                @elseif (Auth::user()->status == 2)
-                                    <div class="full-chart">
-                                        <div class="chart-title flex-class">
-                                            <div class="circle-success">
-                                                <i class="fa fa-check-circle"></i>
-                                            </div>
-                                            <div class="circle-text">
-                                                <p>Hi, Abubakar Mrcode, Congratulation Your Application Is Approved
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                @elseif (Auth::user()->status == 3)
-                                    <div class="full-chart">
-                                        <div class="chart-title flex-class">
-                                            <div class="circle-rejected">
-                                                <i class="fa fa-check-circle"></i>
-                                            </div>
-                                            <div class="circle-text">
-                                                <p>Hi, Abubakar Mrcode, Congratulation Your Application Is Rejected
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                @else
-                                @endif
-                            </div>
-                        </div>
-                    @else
                         @if (Auth::user()->payment->user_id ?? false)
                             <div class="was-apply">
                                 <div class="tabs" id="tabls">
@@ -87,7 +41,10 @@
                                                 <tr class="border">
                                                     <th>S/N</th>
                                                     <th>Full name</th>
-                                                    <th>Email</th>
+                                                    <th>Conference type</th>
+                                                    <th>Conference amount fee</th>
+                                                    <th>Payment reciept</th>
+                                                    <th>Comment</th>
                                                     <th>Date</th>
                                                 </tr>
                                                 <tr class="searchtab rowBlood">
@@ -95,6 +52,32 @@
                                                     <td>{{ Auth::user()->name }}</td>
                                                     <td>{{ Auth::user()->payment->papers_present }}</td>
                                                     <td>{{ Auth::user()->payment->conference_amount }}</td>
+                                                    <td>
+                                                        @if (Auth::user()->payment->file_upload == '')
+                                                            No file
+                                                        @else
+                                                            <a
+                                                                href="{{ Storage::url(Auth::user()->payment->file_upload) }}">Download
+                                                                | View</a>
+                                                        @endif
+                                                    </td>
+                                                    <td>{{ Auth::user()->payment->payment_comment }}</td>
+                                                    <td>
+                                                        @if (Auth::user()->payment->status == 1)
+                                                            <div class="status">
+                                                                In review
+                                                            </div>
+                                                        @elseif (Auth::user()->payment->status == 2)
+                                                            <div class="status-approved">
+                                                                Approved
+                                                            </div>
+                                                        @else
+                                                            <div class="status-reject">
+                                                                Rejected
+                                                            </div>
+                                                        @endif
+                                                    </td>
+                                                    <td>{{ Auth::user()->payment->created_at->format("d M, Y h:i A") }}</td>
                                                 </tr>
                                             </table>
                                         </div>
@@ -106,7 +89,7 @@
                                 <div class="tabs" id="tabls">
                                     <div class="full-chart">
                                         <div class="chart-title">
-                                            <h3>Hi Abubakar Mrcode</h3>
+                                            <h3>Hi {{ Auth::user()->name }}</h3>
                                             <p>Make sure you have complete the payment before share your reciept</p>
                                         </div>
                                         <form class="form-apply mt-1" method="POST"
@@ -174,6 +157,23 @@
                                 </div>
                             </div>
                         @endif
+                    @else
+                        <div class="was-apply">
+                            <div class="tabs" id="tabls">
+                                <div class="full-chart">
+                                    <div class="chart-title flex-class">
+                                        <div class="circle-pending">
+                                            <i class="fa fa-check-circle"></i>
+                                        </div>
+                                        <div class="circle-text">
+                                            <p>Hello, {{ Auth::user()->name }}! Please click the 'Apply' button below
+                                                to submit your application before proceeding with the payment. <u><a
+                                                        href='{{ route('apply') }}'>Apply Now</a></u>.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     @endif
                 </div>
             </section>
@@ -187,39 +187,39 @@
 
             const array = [{
                     type: 'Onsite presenters',
-                    name: 'Faculty members: N25,000',
+                    name: 'Faculty members: N30,000',
                 },
                 {
                     type: 'Onsite presenters',
-                    name: 'Students: N15,000',
+                    name: 'Students: N20,000',
                 },
                 {
                     type: 'Onsite presenters',
-                    name: 'International: 50USD',
+                    name: 'International: 100USD',
                 },
 
                 // Online presenters
                 {
                     type: 'Online presenters',
-                    name: 'Faculty members: N15,000',
+                    name: 'Faculty members: N25,000',
                 },
                 {
                     type: 'Online presenters',
-                    name: 'Students: N10,000',
+                    name: 'Students: N15,000',
                 },
                 {
                     type: 'Online presenters',
-                    name: 'International: 30USD',
+                    name: 'International: 50USD',
                 },
 
                 // Participants without paper
                 {
                     type: 'Participants without paper',
-                    name: 'Corporate: N30,000',
+                    name: 'Corporate: N40,000',
                 },
                 {
                     type: 'Participants without paper',
-                    name: 'Individual:: N10,000',
+                    name: 'Individual:: N15,000',
                 },
 
                 // Accompany

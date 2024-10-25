@@ -16,13 +16,12 @@
 
                 <div class="header-mobile">
                     <div class="header-with">
-                        <div class="mobile-menu" id="openmobilebar" onclick="openMobileMenu()">
-                            <i class="fa fa-angle-right"></i>
+                        <div class="mobile-header">
+                            <img src="{{asset('asset/photos/WhatsApp_Image_2024-10-23_at_8.20.45_PM-removebg-preview.png')}}" alt="">
+                            <p>ICoNDACoM</p>
                         </div>
-
-                        <p>Online Learning</p>
-                        <div class="mobile-menu">
-                            <i class="fa fa-search"></i>
+                        <div class="mobile-menu mobile-margin" id="openmobilebar" onclick="openMobileMenu()">
+                            <i class="fa fa-angle-right"></i>
                         </div>
                     </div>
                 </div>
@@ -58,8 +57,8 @@
                                 <li>
                                     <a href="{{ route('all.showAppliedUsers') }}">
                                         <div class="link-hover">
-                                            <i class="fa fa-bell"></i>
-                                            <span>Users</span>
+                                            <i class="fa fa-users"></i>
+                                            <span>All Users</span>
                                         </div>
                                     </a>
                                 </li>
@@ -67,7 +66,15 @@
                                     <a href="{{ route('apply.showAppliedUsers') }}">
                                         <div class="link-hover">
                                             <i class="fa fa-users"></i>
-                                            <span>Applied Users</span>
+                                            <span>Applicants</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('apply.showPaymentHistories') }}">
+                                        <div class="link-hover">
+                                            <i class="fa fa-users"></i>
+                                            <span>Payment Histries</span>
                                         </div>
                                     </a>
                                 </li>
@@ -93,7 +100,7 @@
                                 <a href="{{ route('profile.edit') }}">
                                     <div class="link-hover">
                                         <i class="fa fa-user-circle"></i>
-                                        <span>My profile</span>
+                                        <span>Profile Settings</span>
                                     </div>
                                 </a>
                             </li>
@@ -107,7 +114,7 @@
                                         this.closest('form').submit();">
                                     <div class="link-hover">
                                         <i class="fa fa-sign-out-alt"></i>
-                                        <span>Logout</span>
+                                        <span>Sign Out</span>
 
                                     </div>
                                 </a>

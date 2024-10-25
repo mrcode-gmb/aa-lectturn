@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string("conference_amount")->nullable();
             $table->string("payment_comment")->nullable();
             $table->string("file_upload")->nullable();
-            $table->string("status")->default(0);
+            $table->string("status")->default(1);
             $table->timestamps();
         });
     }

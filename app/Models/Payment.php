@@ -15,7 +15,7 @@ class Payment extends Model
         'conference_amount',
         'payment_comment',
         'file_upload',
-            'status'
+        'status'
     ];
 
     public function user()
