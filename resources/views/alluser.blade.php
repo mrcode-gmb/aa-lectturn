@@ -22,7 +22,7 @@
                                         <i class="fa fa-users"></i>
                                     </div>
                                     <div class="circle-text">
-                                        <p>Users who create account the comprense</p>
+                                        <p>Users who create account for the comprense</p>
                                     </div>
                                 </div>
                             </div>

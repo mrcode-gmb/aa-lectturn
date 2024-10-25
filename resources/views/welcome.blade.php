@@ -35,7 +35,7 @@
                                         <a href="#body">Home</a>
                                     </li>
                                     <li>
-                                        <a href="https://icondacom.com.ng/apply">Registration</a>
+                                        <a href="https://icondacom.com.ng/apply">Apply Now</a>
                                     </li>
                                     <li>
                                         <a href="#aboutus">About Us</a>

@@ -73,8 +73,8 @@
                                 <li>
                                     <a href="{{ route('apply.showPaymentHistories') }}">
                                         <div class="link-hover">
-                                            <i class="fa fa-users"></i>
-                                            <span>Payment Histries</span>
+                                            <i class="fa fa-brands fa-paypal"></i>
+                                            <span>Payment Records</span>
                                         </div>
                                     </a>
                                 </li>
