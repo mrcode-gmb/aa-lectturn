@@ -90,13 +90,13 @@
                                     <div class="full-chart">
                                         <div class="chart-title">
                                             <h3>Hi {{ Auth::user()->name }}</h3>
-                                            <p>Make sure you have complete the payment through this bank detail below, before share your reciept</p>
+                                            <p>Make sure you have complete the payment before share your reciept</p>
                                         </div>
                                         
                                         <form class="form-apply mt-1" method="POST"
                                             action="{{ route('userPaymentPayment') }}" enctype="multipart/form-data">
                                             @csrf
-                                            <div class="chart-title">
+                                            <div class="pro-secord-body-contents">
     
                                                 <h3>CONFERENCE ACCOUNT</h3>
                                                 <p>
@@ -105,7 +105,6 @@
                                                     {{-- Account Type: Waiting <br> --}}
                                                     Bank: Unity Bank
                                                 </p>
-                                                <br>
                                             </div>
                                             <div class="form-body form-padding-0">
                                                 <div class="form-donor-user" id="donorCheck">

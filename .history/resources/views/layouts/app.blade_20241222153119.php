@@ -26,11 +26,14 @@
 
     <meta property="twitter:card" content="summary_large_image">
 
+    <link rel="icon" type="image/x-icon" href="{{ asset('asset/photos/WhatsApp_Image_2024-10-23_at_8.20.45_PM-removebg-preview.png') }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/favicon-32x32.png') }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/favicon-16x16.png') }}">
+
     <link rel="icon" type="image/x-icon"
-        href="{{ asset('asset/photos/WhatsApp_Image_2024-10-23_at_8.20.45_PM-removebg-preview.png') }}">
-    <link rel="icon" type="image/png" sizes="32x32"
-        href="{{ asset('asset/photos/WhatsApp_Image_2024-10-23_at_8.20.45_PM-removebg-preview.png') }}">
-    <link rel="icon" type="image/png" sizes="16x16"
+        href="">
+    <!-- For PNG favicon -->
+    <link rel="icon" type="image/png"
         href="{{ asset('asset/photos/WhatsApp_Image_2024-10-23_at_8.20.45_PM-removebg-preview.png') }}">
 
 

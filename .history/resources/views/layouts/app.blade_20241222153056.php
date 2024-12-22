@@ -23,14 +23,12 @@
     <meta property="og:image"
         content="{{ asset('asset/photos/WhatsApp_Image_2024-10-23_at_8.20.45_PM-removebg-preview.png') }}">
 
-
+        
     <meta property="twitter:card" content="summary_large_image">
-
     <link rel="icon" type="image/x-icon"
         href="{{ asset('asset/photos/WhatsApp_Image_2024-10-23_at_8.20.45_PM-removebg-preview.png') }}">
-    <link rel="icon" type="image/png" sizes="32x32"
-        href="{{ asset('asset/photos/WhatsApp_Image_2024-10-23_at_8.20.45_PM-removebg-preview.png') }}">
-    <link rel="icon" type="image/png" sizes="16x16"
+    <!-- For PNG favicon -->
+    <link rel="icon" type="image/png"
         href="{{ asset('asset/photos/WhatsApp_Image_2024-10-23_at_8.20.45_PM-removebg-preview.png') }}">
 
 

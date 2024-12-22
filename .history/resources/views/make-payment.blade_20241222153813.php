@@ -90,14 +90,46 @@
                                     <div class="full-chart">
                                         <div class="chart-title">
                                             <h3>Hi {{ Auth::user()->name }}</h3>
-                                            <p>Make sure you have complete the payment through this bank detail below, before share your reciept</p>
+                                            <p>Make sure you have complete the payment before share your reciept</p>
                                         </div>
                                         
                                         <form class="form-apply mt-1" method="POST"
                                             action="{{ route('userPaymentPayment') }}" enctype="multipart/form-data">
                                             @csrf
-                                            <div class="chart-title">
-    
+                                            <div class="pro-secord-body-contents">
+                                                <p>Register now and participate in the 1st International Conference on New Developments in
+                                                    Applied and Computational Mathematics (ICoNDACoM 2025), a premier event showcasing the
+                                                    latest advancements in applied and computational mathematics.</p>
+                                                <p>ICoNDACoM 2025 is more than just an academic conference; it's a gateway to connecting with a
+                                                    global network of researchers, industry leaders, and innovators. Engage in thought-provoking
+                                                    discussions, explore cutting-edge research, and collaborate with professionals shaping the
+                                                    future of mathematics and its real-world applications.</p>
+                        
+                        
+                                                <h3>ONLINE REGISTRATION LINK</h3>
+                                                <a href="https://icondacom.com.ng/apply">https://icondacom.com.ng/apply</a>
+                                                <p>Register and plan ahead to attend.</p>
+                        
+                        
+                                                <h3>When & Where</h3>
+                                                <p>Dates: 30th May to 1st June 2025 in Open Theatre, Old Campus, Bayero
+                                                    University Kano, Kano State, Nigeria</p>
+                                                <p>CONFERENCE THEME: Applied Mathematics as tools for solving problems facing humanities</p>
+                        
+                        
+                                                <h3>IMPORTANT DATES</h3>
+                                                <p>Registration & abstract submission open:—> Jan. 01st, 2025</p>
+                                                <p>Deadline for abstract submission:—> Apr. 18th, 2025</p>
+                                                <p>Arrival and onsite registration:—> May 29th, 2025</p>
+                                                <p>Opening ceremony & group photo by 8:00am:—> May 30th, 2025</p>
+                                                <p>Conference dinner in the evening:—> May 30th, 2025</p>
+                                                <p>Football game in the evening:—> May 31st, 2025</p>
+                                                <p>MATLAB training and closing ceremony:—> Jun. 01st, 2025</p>
+                                                <p>Deadline for full paper submission:—> Aug. 31st, 2025</p>
+                        
+                        
+                        
+                        
                                                 <h3>CONFERENCE ACCOUNT</h3>
                                                 <p>
                                                     Account Name: Dept of Mathematics PG Program <br>
@@ -105,7 +137,6 @@
                                                     {{-- Account Type: Waiting <br> --}}
                                                     Bank: Unity Bank
                                                 </p>
-                                                <br>
                                             </div>
                                             <div class="form-body form-padding-0">
                                                 <div class="form-donor-user" id="donorCheck">

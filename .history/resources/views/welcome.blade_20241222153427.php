@@ -173,10 +173,10 @@
 
                         <h3>CONFERENCE ACCOUNT</h3>
                         <p>
-                            Account Name: Dept of Mathematics PG Program <br>
-                            Account No: 0059158080 <br>
-                            {{-- Account Type: Waiting <br> --}}
-                            Bank: Unity Bank
+                            Account Name: Waiting <br>
+                            Account No: Waiting <br>
+                            Account Type: Waiting <br>
+                            Bank: Waiting
                         </p>
                     </div>
                     <div class="test-left">

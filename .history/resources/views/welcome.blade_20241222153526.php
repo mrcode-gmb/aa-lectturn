@@ -175,7 +175,7 @@
                         <p>
                             Account Name: Dept of Mathematics PG Program <br>
                             Account No: 0059158080 <br>
-                            {{-- Account Type: Waiting <br> --}}
+                            Account Type: Waiting <br>
                             Bank: Unity Bank
                         </p>
                     </div>

@@ -90,7 +90,7 @@
                                     <div class="full-chart">
                                         <div class="chart-title">
                                             <h3>Hi {{ Auth::user()->name }}</h3>
-                                            <p>Make sure you have complete the payment through this bank detail below, before share your reciept</p>
+                                            <p>Make sure you have complete through  the payment before share your reciept</p>
                                         </div>
                                         
                                         <form class="form-apply mt-1" method="POST"

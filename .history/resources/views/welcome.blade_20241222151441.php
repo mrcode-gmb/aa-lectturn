@@ -2,44 +2,8 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title"
-        content="ICoNDACoM 2025 is more than just an academic conference; it's a gateway to connecting with a global network of researchers, industry leaders, and innovators. Engage in thought-provoking discussions, explore cutting-edge research, and collaborate with professionals shaping the future of mathematics and its real-world applications.">
-    <meta name="description"
-        content="ICoNDACoM 2025 is more than just an academic conference; it's a gateway to connecting with a global network of researchers, industry leaders, and innovators. Engage in thought-provoking discussions, explore cutting-edge research, and collaborate with professionals shaping the future of mathematics and its real-world applications.">
-    <meta name="keywords"
-        content="ICoNDACoM 2025, Mathematics Conference, Research, Innovation, Global Networking, Industry Leaders, Real-World Applications">
-    <meta name="author" content="ICoNDACoM Organizing Committee">
-
-    <meta name="robots" content="index, follow">
-    <meta property="og:title"
-        content="ICoNDACoM 2025 is more than just an academic conference; it's a gateway to connecting with a global network of researchers, industry leaders, and innovators. Engage in thought-provoking discussions, explore cutting-edge research, and collaborate with professionals shaping the future of mathematics and its real-world applications.">
-    <meta property="og:description"
-        content="Join ICoNDACoM 2025 to connect with a global network of researchers and innovators shaping the future of mathematics and its real-world applications.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.icondacom.com.ng">
-    <meta property="og:image"
-        content="{{ asset('asset/photos/WhatsApp_Image_2024-10-23_at_8.20.45_PM-removebg-preview.png') }}">
-
-
-    <meta property="twitter:card" content="summary_large_image">
-
-    <link rel="icon" type="image/x-icon"
-        href="{{ asset('asset/photos/WhatsApp_Image_2024-10-23_at_8.20.45_PM-removebg-preview.png') }}">
-    <link rel="icon" type="image/png" sizes="32x32"
-        href="{{ asset('asset/photos/WhatsApp_Image_2024-10-23_at_8.20.45_PM-removebg-preview.png') }}">
-    <link rel="icon" type="image/png" sizes="16x16"
-        href="{{ asset('asset/photos/WhatsApp_Image_2024-10-23_at_8.20.45_PM-removebg-preview.png') }}">
-
-
-    <meta property="twitter:title"
-        content="ICoNDACoM 2025 is more than just an academic conference; it's a gateway to connecting with a global network of researchers, industry leaders, and innovators. Engage in thought-provoking discussions, explore cutting-edge research, and collaborate with professionals shaping the future of mathematics and its real-world applications.">
-    <meta property="twitter:description"
-        content="Engage in thought-provoking discussions and explore cutting-edge research at ICoNDACoM 2025.">
-    <meta property="twitter:image" content="{{ asset('asset/Conference Flyer Prof. Waziri6_125827.jpg') }}">
 
     <title>ICoNDACoM</title>
 
@@ -173,10 +137,10 @@
 
                         <h3>CONFERENCE ACCOUNT</h3>
                         <p>
-                            Account Name: Dept of Mathematics PG Program <br>
-                            Account No: 0059158080 <br>
-                            {{-- Account Type: Waiting <br> --}}
-                            Bank: Unity Bank
+                            Account Name: Waiting <br>
+                            Account No: Waiting <br>
+                            Account Type: Waiting <br>
+                            Bank: Waiting
                         </p>
                     </div>
                     <div class="test-left">
@@ -247,17 +211,17 @@
                             3. Prof. C <br>
                         </p>
                     </div>
-                    <div class="pro-secord-body-contents text-left">
+                    <div class="text-left">
                         <p><strong>Special Issue:</strong> Papers presented shall be published in the ISI-indexed
                             journals below after peer review:</p>
-                        <p>Franklin Open: <a href="https://www.sciencedirect.com/journal/franklin-open"
-                                target="_blank">https://www.sciencedirect.com/journal/franklin-open</a>
+                        <p>Franklin Open: <a
+                                href="https://www.sciencedirect.com/journal/franklin-open">https://www.sciencedirect.com/journal/franklin-open</a>
                         </p>
                         <p>Thai Journal of Mathematics: <a
-                                href="https://thaijmath2.in.cmu.ac.th/index.php/thaijmath"target="_blank">https://thaijmath2.in.cmu.ac.th/index.php/thaijmath</a>
+                                href="https://thaijmath2.in.cmu.ac.th/index.php/thaijmath">https://thaijmath2.in.cmu.ac.th/index.php/thaijmath</a>
                         </p>
                         <p>Filomat: <a
-                                href="https://journal.pmf.ni.ac.rs/filomat/index.php/filomat"target="_blank">https://journal.pmf.ni.ac.rs/filomat/index.php/filomat</a>
+                                href="https://journal.pmf.ni.ac.rs/filomat/index.php/filomat">https://journal.pmf.ni.ac.rs/filomat/index.php/filomat</a>
                         </p>
 
                     </div>
@@ -269,10 +233,9 @@
                         <h3>For more information</h3>
                         <p>
                             <a href="mailto:icondacom.mth@buk.edu.ng">icondacom.mth@buk.edu.ng</a> <br>
-
+                            <a href="mail:maaliyu@gsu.edu.ng">maaliyu@gsu.edu.ng</a><br>
+                            <a href="mailto:hmuhd.mth@buk.edu.ng">hmuhd.mth@buk.edu.ng</a> <br>
                         </p>
-                        <a href="mail:maaliyu@gsu.edu.ng">maaliyu@gsu.edu.ng</a><br>
-                        <a href="mailto:hmuhd.mth@buk.edu.ng">hmuhd.mth@buk.edu.ng</a> <br>
                         <p>
                             <a href="tel:+2348067864645">+2348067864645</a><br>
                             <a href="tel:+2348036143352">+2348036143352</a><br>

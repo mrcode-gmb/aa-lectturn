@@ -22,18 +22,12 @@
     <meta property="og:url" content="https://www.icondacom.com.ng">
     <meta property="og:image"
         content="{{ asset('asset/photos/WhatsApp_Image_2024-10-23_at_8.20.45_PM-removebg-preview.png') }}">
-
-
     <meta property="twitter:card" content="summary_large_image">
-
     <link rel="icon" type="image/x-icon"
         href="{{ asset('asset/photos/WhatsApp_Image_2024-10-23_at_8.20.45_PM-removebg-preview.png') }}">
-    <link rel="icon" type="image/png" sizes="32x32"
+    <!-- For PNG favicon -->
+    <link rel="icon" type="image/png"
         href="{{ asset('asset/photos/WhatsApp_Image_2024-10-23_at_8.20.45_PM-removebg-preview.png') }}">
-    <link rel="icon" type="image/png" sizes="16x16"
-        href="{{ asset('asset/photos/WhatsApp_Image_2024-10-23_at_8.20.45_PM-removebg-preview.png') }}">
-
-
     <meta property="twitter:title"
         content="ICoNDACoM 2025 is more than just an academic conference; it's a gateway to connecting with a global network of researchers, industry leaders, and innovators. Engage in thought-provoking discussions, explore cutting-edge research, and collaborate with professionals shaping the future of mathematics and its real-world applications.">
     <meta property="twitter:description"

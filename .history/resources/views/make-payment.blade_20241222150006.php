@@ -90,23 +90,11 @@
                                     <div class="full-chart">
                                         <div class="chart-title">
                                             <h3>Hi {{ Auth::user()->name }}</h3>
-                                            <p>Make sure you have complete the payment through this bank detail below, before share your reciept</p>
+                                            <p>Make sure you have complete the payment before share your reciept</p>
                                         </div>
-                                        
                                         <form class="form-apply mt-1" method="POST"
                                             action="{{ route('userPaymentPayment') }}" enctype="multipart/form-data">
                                             @csrf
-                                            <div class="chart-title">
-    
-                                                <h3>CONFERENCE ACCOUNT</h3>
-                                                <p>
-                                                    Account Name: Dept of Mathematics PG Program <br>
-                                                    Account No: 0059158080 <br>
-                                                    {{-- Account Type: Waiting <br> --}}
-                                                    Bank: Unity Bank
-                                                </p>
-                                                <br>
-                                            </div>
                                             <div class="form-body form-padding-0">
                                                 <div class="form-donor-user" id="donorCheck">
                                                     <div class="grid grid:3 gap10">
@@ -203,7 +191,7 @@
                 },
                 {
                     type: 'Onsite presenters',
-                    name: 'Students: N25,000',
+                    name: 'Students: N20,000',
                 },
                 {
                     type: 'Onsite presenters',
@@ -227,17 +215,17 @@
                 // Participants without paper
                 {
                     type: 'Participants without paper',
-                    name: 'Corporate: N70,000',
+                    name: 'Corporate: N40,000',
                 },
                 {
                     type: 'Participants without paper',
-                    name: 'Individual:: N25,000',
+                    name: 'Individual:: N15,000',
                 },
 
                 // Accompany
                 {
                     type: 'Accompany',
-                    name: 'Individual: N20,000',
+                    name: 'Individual: N10,000',
                 },
 
             ]
