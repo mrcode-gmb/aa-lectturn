@@ -97,8 +97,8 @@
                         IN APPLIED AND COMPUTATIONAL MATHEMATICS
                         (ICoNDACoM 2025)
                     </h4>
-                    <a href="{{ asset('asset/Conference Flyer Prof. Waziri6_125827.jpg') }}">
-                        <img src="{{ asset('asset/Conference Flyer Prof. Waziri6_125827.jpg') }}" alt="">
+                    <a href="{{ asset('asset/Screenshot from 2024-10-24 17-03-34.png') }}">
+                        <img src="{{ asset('asset/Screenshot from 2024-10-24 17-03-34.png') }}" alt="">
                     </a>
                     <div class="pro-secord-body-contents">
                         <p>Register now and participate in the 1st International Conference on New Developments in
@@ -169,8 +169,8 @@
                         <div class="list-title">
                             <h5>Onsite presenters:</h5>
                             <p>
-                                1. Faculty members: &#8358;50,000 <br>
-                                2. Students: &#8358;25,000 <br>
+                                1. Faculty members: &#8358;30,000 <br>
+                                2. Students: &#8358;20,000 <br>
                                 3. International: 100USD<br>
                             </p>
                         </div>
@@ -187,15 +187,15 @@
                         <div class="list-title">
                             <h5>Participants without paper:</h5>
                             <p>
-                                1. Corporate: &#8358;70,000 <br>
-                                2. Individual:: &#8358;25,000 <br>
+                                1. Corporate: &#8358;40,000 <br>
+                                2. Individual:: &#8358;15,000 <br>
                             </p>
                         </div>
 
                         <div class="list-title">
                             <h5>Accompany:</h5>
                             <p>
-                                1. Individual:: &#8358;20,000 <br>
+                                1. Individual:: &#8358;10,000 <br>
                             </p>
                         </div>
 

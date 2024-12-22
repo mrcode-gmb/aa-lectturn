@@ -188,14 +188,14 @@
                             <h5>Participants without paper:</h5>
                             <p>
                                 1. Corporate: &#8358;70,000 <br>
-                                2. Individual:: &#8358;25,000 <br>
+                                2. Individual:: &#8358;15,000 <br>
                             </p>
                         </div>
 
                         <div class="list-title">
                             <h5>Accompany:</h5>
                             <p>
-                                1. Individual:: &#8358;20,000 <br>
+                                1. Individual:: &#8358;10,000 <br>
                             </p>
                         </div>
 

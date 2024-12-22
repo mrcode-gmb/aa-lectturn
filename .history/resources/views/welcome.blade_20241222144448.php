@@ -195,7 +195,7 @@
                         <div class="list-title">
                             <h5>Accompany:</h5>
                             <p>
-                                1. Individual:: &#8358;20,000 <br>
+                                1. Individual:: &#8358;10,000 <br>
                             </p>
                         </div>
 
