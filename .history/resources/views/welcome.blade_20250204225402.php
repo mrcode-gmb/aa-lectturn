@@ -134,8 +134,8 @@
                         IN APPLIED AND COMPUTATIONAL MATHEMATICS
                         (ICoNDACoM 2025)
                     </h4>
-                    <a href="{{ asset('asset/Conference Flyer Prof. Waziri6_125827.jpg') }}">
-                        <img src="{{ asset('asset/Conference Flyer Prof. Waziri6_125827.jpg') }}" alt="">
+                    <a href="{{ asset('asset/') }}">
+                        <img src="{{ asset('asset/') }}" alt="">
                     </a>
                     <div class="pro-secord-body-contents">
                         <p>Register now and participate in the 1st International Conference on New Developments in
@@ -175,7 +175,7 @@
                         <p>
                             Account Name: Dept of Mathematics PG Program <br>
                             Account No: 0059158080 <br>
-                            Account Type: Waiting <br>
+                            {{-- Account Type: Waiting <br> --}}
                             Bank: Unity Bank
                         </p>
                     </div>
