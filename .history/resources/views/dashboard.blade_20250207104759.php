@@ -22,7 +22,7 @@
                                         </div>
                                         <div class="right">
                                             <h4>Users</h4>
-                                            <p class="percent" id="percent">{{ $allUsers }}</p>
+                                            <p class="percent" id="percent">0%</p>
                                         </div>
                                     </div>
                                 </div>
@@ -33,7 +33,7 @@
                                         </div>
                                         <div class="right">
                                             <h4>Users Approved</h4>
-                                            <p class="percent" id="percent1">{{ $allPendingUsers }}</p>
+                                            <p class="percent" id="percent1">0%</p>
                                         </div>
                                     </div>
 
@@ -45,7 +45,7 @@
                                         </div>
                                         <div class="right">
                                             <h4>Users Pending</h4>
-                                            <p class="percent" id="percent2">{{ $allApprovedUsers }}</p>
+                                            <p class="percent" id="percent2">0%</p>
                                         </div>
                                     </div>
 
@@ -57,7 +57,7 @@
                                         </div>
                                         <div class="right">
                                             <h4>Users Rejected</h4>
-                                            <p class="percent" id="percent3">{{ $allRejectedUsers }}</p>
+                                            <p class="percent" id="percent3">0%</p>
                                         </div>
                                     </div>
 
@@ -158,57 +158,48 @@
             </div>
         </section>
     </div>
-    @if (Auth::user()->role == 2)
-        <div class="modal d-nones text-center font-bold" id="modal">
-            <div class="modal-dialog mt-auto">
-                <div class="modal-head">
-                    <p><b>Notifications</b> </p>
-                </div>
-                <form class="modal-body">
-                    <p>
-                        <b>Welcome to Your ICoNDACoM 2025 Dashboard!</b> <br>
-                        We’re thrilled to have you on board for the 1st International Conference on New Developments in
-                        Applied and Computational Mathematics (ICoNDACoM 2025). This dashboard you can registration,
-                        share
-                        payment receipt and tracking your application status.
-                        <br>
-                        <b>How to Apply:</b> <br>
-                        To submit imformation and Abstract, click on the "Apply" button. Complete the required fields,
-                        upload your document in the specified format, and review your information before submission.
-                        select
-                        an option under "Do you have papers to present?" If you choose "Yes", additional fields will
-                        appear
-                        where you can upload your paper. Please ensure your document is in the correct format before
-                        submission. If you select "No", you can skip the paper upload section and proceed to fill in
-                        your
-                        personal and professional details, including your full name, email, title, occupation, and
-                        organization.
-                        <br>
-
-                        <b>How to Make a Payment:</b><br>
-                        After submitting your registration form, click on the "Payment" link in the sidebar. Fill out
-                        the
-                        payment form with the required details and upload your payment receipt as proof. Make sure the
-                        receipt is clear and legible to avoid delays in verification. Once submitted, you can track your
-                        payment status directly from your dashboard.
-                        <br>
-                        <b>Track Your Progress & Get Support:</b><br>
-                        After submitting your form, you can monitor your registration status through the dashboard. Any
-                        updates regarding your submission, payment confirmation, or event schedules will be displayed
-                        here.
-                        If you need assistance, feel free to visit the "Support" section or contact us directly—we’re
-                        here
-                        to help!
-
-
-                    </p>
-                    <div class="modal-footer text-center">
-                        <button type="button" onclick="modalDismiss()">OK</button>
-                    </div>
-                </form>
+    <div class="modal d-nones text-center font-bold" id="modal">
+        <div class="modal-dialog mt-auto">
+            <div class="modal-head">
+                <p><b>Notifications</b> </p>
             </div>
+            <form class="modal-body">
+                <p>
+                    <b>Welcome to Your ICoNDACoM 2025 Dashboard!</b> <br>
+                    We’re thrilled to have you on board for the 1st International Conference on New Developments in
+                    Applied and Computational Mathematics (ICoNDACoM 2025). This dashboard you can registration, share
+                    payment receipt and tracking your application status.
+                    <br>
+                    <b>How to Apply:</b> <br>
+                    To submit imformation and Abstract, click on the "Apply" button. Complete the required fields,
+                    upload your document in the specified format, and review your information before submission. select
+                    an option under "Do you have papers to present?" If you choose "Yes", additional fields will appear
+                    where you can upload your paper. Please ensure your document is in the correct format before
+                    submission. If you select "No", you can skip the paper upload section and proceed to fill in your
+                    personal and professional details, including your full name, email, title, occupation, and
+                    organization.
+                    <br>
+
+                    <b>How to Make a Payment:</b><br>
+                    After submitting your registration form, click on the "Payment" link in the sidebar. Fill out the
+                    payment form with the required details and upload your payment receipt as proof. Make sure the
+                    receipt is clear and legible to avoid delays in verification. Once submitted, you can track your
+                    payment status directly from your dashboard.
+                    <br>
+                    <b>Track Your Progress & Get Support:</b><br>
+                    After submitting your form, you can monitor your registration status through the dashboard. Any
+                    updates regarding your submission, payment confirmation, or event schedules will be displayed here.
+                    If you need assistance, feel free to visit the "Support" section or contact us directly—we’re here
+                    to help!
+
+
+                </p>
+                <div class="modal-footer text-center">
+                    <button type="button" onclick="modalDismiss()">OK</button>
+                </div>
+            </form>
         </div>
-    @endif
+    </div>
     <script>
         const modalDismiss = () => {
             document.querySelector("#modal").style.display = "none";
@@ -219,5 +210,5 @@
                 document.querySelector("#modal").style.display = "none";
             }
         }
-    </script>
+ </
 </x-app-layout>

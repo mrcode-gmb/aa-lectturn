@@ -884,14 +884,12 @@ header {
 }
 
 .container-fluiding .col-md-3 {
-    
-    -webkit-box-shadow: 10px 10px 1rem 0px #ddd;
-            box-shadow: 10px 10px 1rem 0px #ddd;
-    
+    -webkit-box-shadow: 0 8px 8px 4px #efefef;
+            box-shadow: 0 8px 8px 4px #efefef;
     background: #fff;
     margin-top: 30px;
     padding-top: 16px;
-    border-radius: 15px !important;
+    border-radius: 5px;
 }
 
 .icon-flex {
@@ -1228,15 +1226,12 @@ header {
     display: -ms-flexbox;
     display: flex;
     overflow-y: auto;
-    padding-bottom: 2rem;
+    pa
     /* display: none; */
 
 }
 .d-none{
     display: none;
-}
-.mt-auto{
-    margin-top: auto !important;
 }
 .modal-dialog {
     width: 30%;

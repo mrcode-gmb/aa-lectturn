@@ -1235,9 +1235,6 @@ header {
 .d-none{
     display: none;
 }
-.mt-auto{
-    margin-top: auto !important;
-}
 .modal-dialog {
     width: 30%;
     background: white;

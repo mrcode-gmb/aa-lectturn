@@ -891,7 +891,7 @@ header {
     background: #fff;
     margin-top: 30px;
     padding-top: 16px;
-    border-radius: 15px !important;
+    border-radius: 15px;
 }
 
 .icon-flex {
@@ -1234,9 +1234,6 @@ header {
 }
 .d-none{
     display: none;
-}
-.mt-auto{
-    margin-top: auto !important;
 }
 .modal-dialog {
     width: 30%;
