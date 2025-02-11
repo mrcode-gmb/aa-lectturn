@@ -251,13 +251,13 @@
                         <p><strong>Special Issue:</strong> Papers presented shall be published in the ISI-indexed
                             journals below after peer review:</p>
                         <p>Franklin Open: <a href="https://www.sciencedirect.com/journal/franklin-open"
-                                target="_blank">https://www.sciencedirect.com/<br/>journal/franklin-open</a>
+                                target="_blank">https://www.sciencedirect.com/<nr/>journal/franklin-open</a>
                         </p>
                         <p>Thai Journal of Mathematics: <a
-                                href="https://thaijmath2.in.cmu.ac.th/index.php/thaijmath"target="_blank">https://thaijmath2.in.cmu.ac.th/<br/>index.php/thaijmath</a>
+                                href="https://thaijmath2.in.cmu.ac.th/index.php/thaijmath"target="_blank">https://thaijmath2.in.cmu.ac.th/<nr/>index.php/thaijmath</a>
                         </p>
                         <p>Filomat: <a
-                                href="https://journal.pmf.ni.ac.rs/filomat/index.php/filomat"target="_blank">https://journal.pmf.ni.ac.rs/<br/>filomat/index.php/filomat</a>
+                                href="https://journal.pmf.ni.ac.rs/filomat/index.php/filomat"target="_blank">https://journal.pmf.ni.ac.rs/<nr/>filomat/index.php/filomat</a>
                         </p>
 
                     </div>
@@ -484,11 +484,11 @@
                             research in mathematical modeling, numerical methods, data science, and more. ICoNDACoM 2025
                             serves as a platform for advancing knowledge and addressing real-world challenges through
                             cutting-edge mathematical solutions.</p>
-                        {{-- <div class="start" style="justify-content: center; text-align:center;">
+                        <div class="start" style="justify-content: center; text-align:center;">
                             <div class="start-links start-linking">
                                 <a href="#!">Read more</a>
                             </div>
-                        </div> --}}
+                        </div>
                     </div>
                 </div>
             </section>

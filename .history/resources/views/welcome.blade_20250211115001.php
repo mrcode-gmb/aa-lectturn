@@ -153,7 +153,7 @@
 
 
                         <h3>When & Where</h3>
-                        <p>Dates: 30th May to 1st June 2025 J.O.C Ezeilo Theatre, Old Campus, Bayero
+                        <p>Dates: 30th May to 1st June 2025 in Open Theatre, Old Campus, Bayero
                             University Kano, Kano State, Nigeria</p>
                         <p>CONFERENCE THEME: Applied Mathematics as tools for solving problems facing humanities</p>
 
@@ -241,23 +241,22 @@
                     <div class="text-left">
                         <h3>Keynotes Speakers:</h3>
                         <p>
-                            1. <b>Prof. Mehiddin AL-Baali</b> <br> &nbsp; &nbsp; <span style="font-size: 15px">Department Of Mathematics Sultan Qaboos University, Muscat, Oman.</span> <br>
-                            2. <b>Prof. Leong Wah June</b> <br> &nbsp; &nbsp; <span style="font-size: 15px">University Putra Malaysia, Malaysia.</span> <br>
-                            3. <b>Prof. Bashir Ali</b> <br> &nbsp; &nbsp; <span style="font-size: 15px">Bayaro University Kano, Kano State, Nigeria.</span> <br>
-                            4. <b>Prof. Nafiu Hussain</b> <br> &nbsp; &nbsp; <span style="font-size: 15px">Bayaro University Kano, Kano State, Nigeria.</span> <br>
+                            1. <b>Prof. Mehi</b> <br>
+                            2. Prof. B <br>
+                            3. Prof. C <br>
                         </p>
                     </div>
                     <div class="pro-secord-body-contents text-left">
                         <p><strong>Special Issue:</strong> Papers presented shall be published in the ISI-indexed
                             journals below after peer review:</p>
                         <p>Franklin Open: <a href="https://www.sciencedirect.com/journal/franklin-open"
-                                target="_blank">https://www.sciencedirect.com/<br/>journal/franklin-open</a>
+                                target="_blank">https://www.sciencedirect.com/journal/franklin-open</a>
                         </p>
                         <p>Thai Journal of Mathematics: <a
-                                href="https://thaijmath2.in.cmu.ac.th/index.php/thaijmath"target="_blank">https://thaijmath2.in.cmu.ac.th/<br/>index.php/thaijmath</a>
+                                href="https://thaijmath2.in.cmu.ac.th/index.php/thaijmath"target="_blank">https://thaijmath2.in.cmu.ac.th/index.php/thaijmath</a>
                         </p>
                         <p>Filomat: <a
-                                href="https://journal.pmf.ni.ac.rs/filomat/index.php/filomat"target="_blank">https://journal.pmf.ni.ac.rs/<br/>filomat/index.php/filomat</a>
+                                href="https://journal.pmf.ni.ac.rs/filomat/index.php/filomat"target="_blank">https://journal.pmf.ni.ac.rs/filomat/index.php/filomat</a>
                         </p>
 
                     </div>
@@ -484,11 +483,11 @@
                             research in mathematical modeling, numerical methods, data science, and more. ICoNDACoM 2025
                             serves as a platform for advancing knowledge and addressing real-world challenges through
                             cutting-edge mathematical solutions.</p>
-                        {{-- <div class="start" style="justify-content: center; text-align:center;">
+                        <div class="start" style="justify-content: center; text-align:center;">
                             <div class="start-links start-linking">
                                 <a href="#!">Read more</a>
                             </div>
-                        </div> --}}
+                        </div>
                     </div>
                 </div>
             </section>

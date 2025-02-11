@@ -400,8 +400,6 @@
 
     .form-data .form-label {
       width: 100%;
-      margin: 0;
-      background: white;
       -webkit-box-shadow: 1px 1px 1.4rem 0 #efefef;
               box-shadow: 1px 1px 1.4rem 0 #efefef;
     }

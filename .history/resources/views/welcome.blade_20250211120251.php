@@ -484,11 +484,11 @@
                             research in mathematical modeling, numerical methods, data science, and more. ICoNDACoM 2025
                             serves as a platform for advancing knowledge and addressing real-world challenges through
                             cutting-edge mathematical solutions.</p>
-                        {{-- <div class="start" style="justify-content: center; text-align:center;">
+                        <div class="start" style="justify-content: center; text-align:center;">
                             <div class="start-links start-linking">
                                 <a href="#!">Read more</a>
                             </div>
-                        </div> --}}
+                        </div>
                     </div>
                 </div>
             </section>

@@ -901,7 +901,7 @@ h2 {
     }
 
     .pro-body-title h4 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .pro-second-body-grid {
@@ -924,11 +924,7 @@ h2 {
     }
 
     .about-we {
-        height: auto !important;
-        padding: 20px 0;
-    }
-    .about-details h4{
-        font-size: 24px;
+        height: auth;
     }
 
     /* start of phone styles */

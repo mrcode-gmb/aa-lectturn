@@ -392,16 +392,17 @@
       height: 40vh;
       display: none;
     }
-  
+    .form-data .form-label{
+      margin-top: ;
+      height: auto !important;
+    }
 
     .form-averter .avater img {
       width: 11rem;
     }
 
     .form-data .form-label {
-      width: 100%;
-      margin: 0;
-      background: white;
+      width: 90%;
       -webkit-box-shadow: 1px 1px 1.4rem 0 #efefef;
               box-shadow: 1px 1px 1.4rem 0 #efefef;
     }
