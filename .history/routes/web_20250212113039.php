@@ -23,7 +23,7 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () {
-    if (Auth::user()->status == 0 && Auth::user()->role == 2) {
+    if (Auth::user()->status == 0 ) {
         return view("apply");
     } else {
         return view(

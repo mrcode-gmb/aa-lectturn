@@ -120,7 +120,7 @@ class ApplyCompetationController extends Controller
                 "date" => $data->created_at->format("M D, Y h:i A"),
             ]);
             // Fetch all users who haven't completed their registration
-            $incompleteUsers = User::where('role', 2)->where("status", 0)->get();
+            $incompleteUsers = User::where('is_registered', false)->get();
 
             foreach ($incompleteUsers as $incompleteUser) {
                 // Send reminder email

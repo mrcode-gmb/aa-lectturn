@@ -23,18 +23,8 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () {
-    if (Auth::user()->status == 0 && Auth::user()->role == 2) {
-        return view("apply");
-    } else {
-        return view(
-            'dashboard',
-            [
-                "allUsers" => User::where("role", 2)->count(),
-                "allPendingUsers" => User::where("status", 1)->count(),
-                "allApprovedUsers" => User::where("status", 2)->count(),
-                "allRejectedUsers" => User::where("status", 3)->count(),
-            ]
-        );
+    if(Auth::user()->s == 0){
+
     }
 })->middleware(['auth', 'verified'])->name('dashboard');
 

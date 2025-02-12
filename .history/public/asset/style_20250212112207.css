@@ -212,9 +212,9 @@ body {
     background-image: -webkit-gradient(linear,
             left top, left bottom,
             from(rgba(0, 0, 0, 0.4)),
-            to(rgba(0, 0, 0, 0.8))), url('../asset/fos3\ \(1\).jpg');
+            to(rgba(0, 0, 0, 0.8))), url('../asset/FIRST\ INTERNATIONAL\ CONFERENCE_023103-1.png');
     background-image: linear-gradient(rgba(0, 0, 0, 0.4),
-            rgba(0, 0, 0, 0.8)), url('../asset/fos3\ \(1\).jpg');
+            rgba(0, 0, 0, 0.8)), url('../asset/FIRST\ INTERNATIONAL\ CONFERENCE_023103-1.png');
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;

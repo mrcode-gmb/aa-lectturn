@@ -153,24 +153,20 @@
 
 
                         <h3>When & Where</h3>
-                        <p>Dates: 25TH - 29TH JUNE, 2025 J.O.C Ezeilo Theatre, Old Campus, Bayero
+                        <p>Dates: 30th May to 1st June 2025 J.O.C Ezeilo Theatre, Old Campus, Bayero
                             University Kano, Kano State, Nigeria</p>
                         <p>CONFERENCE THEME: Applied Mathematics as tools for solving problems facing humanities</p>
 
 
-                        <p><strong>25TH - 29TH JUNE, 2025</strong></p>
-
                         <h3>IMPORTANT DATES</h3>
-
-
-                        <p><strong>DEC. 01ST, 2024</strong>: REGISTRATION & ABSTRACT SUBMISSION OPEN</p>
-                        <p><strong>JUN. 10TH, 2025</strong>: DEADLINE FOR ABSTRACT SUBMISSION</p>
-                        <p><strong>JUN. 25TH, 2025</strong>: ARRIVAL AND ONSITE REGISTRATION</p>
-                        <p><strong>JUN. 26TH, 2025</strong>: HANDS ON TRAINING ON MATHEMATICAL SOFTWARE</p>
-                        <p><strong>JUN. 27TH, 2025</strong>: OPENING CEREMONY AND CONFERENCE DINNER</p>
-                        <p><strong>JUN. 28TH, 2025</strong>: TECHNICAL SESSION AND CLOSING CEREMONY</p>
-                        <p><strong>JUN. 29TH, 2025</strong>: DEPARTURE</p>
-
+                        <p>Registration & abstract submission open:—> Jan. 01st, 2025</p>
+                        <p>Deadline for abstract submission:—> Apr. 18th, 2025</p>
+                        <p>Arrival and onsite registration:—> May 29th, 2025</p>
+                        <p>Opening ceremony & group photo by 8:00am:—> May 30th, 2025</p>
+                        <p>Conference dinner in the evening:—> May 30th, 2025</p>
+                        <p>Football game in the evening:—> May 31st, 2025</p>
+                        <p>MATLAB training and closing ceremony:—> Jun. 01st, 2025</p>
+                        <p>Deadline for full paper submission:—> Aug. 31st, 2025</p>
 
 
 

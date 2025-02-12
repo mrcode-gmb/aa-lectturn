@@ -270,14 +270,13 @@ body {
 .pro-secord-body-contents h3,
 .pro-secord-body-contents p {
     color: #444;
-    margin: 15px 0;
+    margin: 15px 
+    0;
 }
 
 .pro-secord-body-contents a {
     text-decoration: none;
     color: var(--main-color) !important;
-    text-wrap: wrap;
-    word-break: break-all;
 }
 
 .test-left {

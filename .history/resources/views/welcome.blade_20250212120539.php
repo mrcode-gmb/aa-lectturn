@@ -153,7 +153,7 @@
 
 
                         <h3>When & Where</h3>
-                        <p>Dates: 25TH - 29TH JUNE, 2025 J.O.C Ezeilo Theatre, Old Campus, Bayero
+                        <p>Dates: 30th May to 1st June 2025 J.O.C Ezeilo Theatre, Old Campus, Bayero
                             University Kano, Kano State, Nigeria</p>
                         <p>CONFERENCE THEME: Applied Mathematics as tools for solving problems facing humanities</p>
 

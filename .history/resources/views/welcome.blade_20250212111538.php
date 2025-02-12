@@ -153,24 +153,20 @@
 
 
                         <h3>When & Where</h3>
-                        <p>Dates: 25TH - 29TH JUNE, 2025 J.O.C Ezeilo Theatre, Old Campus, Bayero
+                        <p>Dates: 30th May to 1st June 2025 J.O.C Ezeilo Theatre, Old Campus, Bayero
                             University Kano, Kano State, Nigeria</p>
                         <p>CONFERENCE THEME: Applied Mathematics as tools for solving problems facing humanities</p>
 
 
-                        <p><strong>25TH - 29TH JUNE, 2025</strong></p>
-
                         <h3>IMPORTANT DATES</h3>
-
-
-                        <p><strong>DEC. 01ST, 2024</strong>: REGISTRATION & ABSTRACT SUBMISSION OPEN</p>
-                        <p><strong>JUN. 10TH, 2025</strong>: DEADLINE FOR ABSTRACT SUBMISSION</p>
-                        <p><strong>JUN. 25TH, 2025</strong>: ARRIVAL AND ONSITE REGISTRATION</p>
-                        <p><strong>JUN. 26TH, 2025</strong>: HANDS ON TRAINING ON MATHEMATICAL SOFTWARE</p>
-                        <p><strong>JUN. 27TH, 2025</strong>: OPENING CEREMONY AND CONFERENCE DINNER</p>
-                        <p><strong>JUN. 28TH, 2025</strong>: TECHNICAL SESSION AND CLOSING CEREMONY</p>
-                        <p><strong>JUN. 29TH, 2025</strong>: DEPARTURE</p>
-
+                        <p>Registration & abstract submission open:—> Jan. 01st, 2025</p>
+                        <p>Deadline for abstract submission:—> Apr. 18th, 2025</p>
+                        <p>Arrival and onsite registration:—> May 29th, 2025</p>
+                        <p>Opening ceremony & group photo by 8:00am:—> May 30th, 2025</p>
+                        <p>Conference dinner in the evening:—> May 30th, 2025</p>
+                        <p>Football game in the evening:—> May 31st, 2025</p>
+                        <p>MATLAB training and closing ceremony:—> Jun. 01st, 2025</p>
+                        <p>Deadline for full paper submission:—> Aug. 31st, 2025</p>
 
 
 
@@ -245,46 +241,31 @@
                     <div class="text-left">
                         <h3>Keynotes Speakers:</h3>
                         <p>
-                            1. <b>Prof. Mehiddin AL-Baali</b> <br> &nbsp; &nbsp; <span
-                                style="font-size: 15px">Department Of Mathematics Sultan Qaboos University, Muscat,
-                                Oman.</span> <br>
-                            2. <b>Prof. Leong Wah June</b> <br> &nbsp; &nbsp; <span style="font-size: 15px">University
-                                Putra Malaysia, Malaysia.</span> <br>
-                            3. <b>Prof. Bashir Ali</b> <br> &nbsp; &nbsp; <span style="font-size: 15px">Bayaro
-                                University Kano, Kano State, Nigeria.</span> <br>
-                            4. <b>Prof. Nafiu Hussain</b> <br> &nbsp; &nbsp; <span style="font-size: 15px">Bayaro
-                                University Kano, Kano State, Nigeria.</span> <br>
+                            1. <b>Prof. Mehiddin AL-Baali</b> <br> &nbsp; &nbsp; <span style="font-size: 15px">Department Of Mathematics Sultan Qaboos University, Muscat, Oman.</span> <br>
+                            2. <b>Prof. Leong Wah June</b> <br> &nbsp; &nbsp; <span style="font-size: 15px">University Putra Malaysia, Malaysia.</span> <br>
+                            3. <b>Prof. Bashir Ali</b> <br> &nbsp; &nbsp; <span style="font-size: 15px">Bayaro University Kano, Kano State, Nigeria.</span> <br>
+                            4. <b>Prof. Nafiu Hussain</b> <br> &nbsp; &nbsp; <span style="font-size: 15px">Bayaro University Kano, Kano State, Nigeria.</span> <br>
                         </p>
                     </div>
                     <div class="pro-secord-body-contents text-left">
-
+                        <p><strong>Special Issue:</strong> Papers presented shall be published in the ISI-indexed
+                            journals below after peer review:</p>
+                        <p>Franklin Open: <a href="https://www.sciencedirect.com/journal/franklin-open"
+                                target="_blank">https://www.sciencedirect.com/<br/>journal/franklin-open</a>
+                        </p>
                         <p>Thai Journal of Mathematics: <a
-                                href="https://thaijmath2.in.cmu.ac.th/index.php/thaijmath">https://thaijmath2.in.cmu.ac.th/index.php/thaijmath</a>
+                                href="https://thaijmath2.in.cmu.ac.th/index.php/thaijmath"target="_blank">https://thaijmath2.in.cmu.ac.th/<br/>index.php/thaijmath</a>
                         </p>
                         <p>Filomat: <a
-                                href="https://journal.pmf.ni.ac.rs/filomat/index.php/filomat">https://journal.pmf.ni.ac.rs/filomat/index.php/filomat</a>
+                                href="https://journal.pmf.ni.ac.rs/filomat/index.php/filomat"target="_blank">https://journal.pmf.ni.ac.rs/<br/>filomat/index.php/filomat</a>
                         </p>
-                        <p>Bayero Journal of Pure & Applied Sciences: <a
-                                href="https://buk.edu.ng/journals_buk">https://buk.edu.ng/journals_buk</a></p>
-                        <p>Bima Journal of Science & Technology: <a
-                                href="https://journals.gibeacademia.com/index.php/bimajst/index">https://journals.gibeacademia.com/index.php/bimajst/index</a>
-                        </p>
-                        <p>Malaysian Journal of Computing and Applied Mathematics: <a
-                                href="https://journal.unisza.edu.my/myjcam/index.php/myjcam/about">https://journal.unisza.edu.my/myjcam/index.php/myjcam/about</a>
-                        </p>
-                        <p>Journal of Computational Innovation and Analytics: <a
-                                href="https://e-journal.uum.edu.my/index.php/jcia/announcement">https://e-journal.uum.edu.my/index.php/jcia/announcement</a>
-                        </p>
-
                     </div>
                     <br>
                     <div class="pro-secord-body-contents text-left">
                         <p>
-                            <b>Host:</b> Numerical Optimization Research Group, Bayero University Kano, Kano State,
-                            Nigeria <br><br>
-                            <b>Co-host:</b> GSU-Mathematics for Innovative Research (GSU-MIR) Group, Gombe State
-                            University,
-                            Gombe, Gombe State, Nigeria
+                            <b>Host:</b> Numerical Optimization Research Group, Bayero University Kano, Kano State, Nigeria <br><br>
+                            <b>Co-host:</b> GSU-Mathematics for Innovative Research (GSU-MIR) Group, Gombe State University,
+                            Gombe, Gombe State, Nigeria 
 
 
                             <br><br>
@@ -300,7 +281,7 @@
                             <br> &nbsp; &nbsp; HON. Minister Of State for Education Federal Republic Of Nigeria.
 
                         </p>
-
+                        
                         <h3>For more information</h3>
                         <p>
                             <a href="mailto:icondacom.mth@buk.edu.ng">icondacom.mth@buk.edu.ng</a> <br>

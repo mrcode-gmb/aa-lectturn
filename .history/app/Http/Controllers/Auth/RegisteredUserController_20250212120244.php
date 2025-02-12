@@ -9,7 +9,6 @@ use Illuminate\Validation\Rules;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\RedirectResponse;
 use App\Mail\RegistrationReminderMail;
 use Illuminate\Auth\Events\Registered;

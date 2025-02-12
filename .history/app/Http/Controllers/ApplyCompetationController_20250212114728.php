@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\RejectedPaymentMail;
 use App\Models\User;
 use App\Models\Payment;
 use App\Mail\UserStored;
@@ -10,10 +11,8 @@ use App\Mail\RejectedMail;
 use Illuminate\Http\Request;
 use App\Mail\ApprovePaymentMail;
 use App\Models\ApplyCompetation;
-use App\Mail\RejectedPaymentMail;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
-use App\Mail\RegistrationReminderMail;
 
 class ApplyCompetationController extends Controller
 {
@@ -120,7 +119,7 @@ class ApplyCompetationController extends Controller
                 "date" => $data->created_at->format("M D, Y h:i A"),
             ]);
             // Fetch all users who haven't completed their registration
-            $incompleteUsers = User::where('role', 2)->where("status", 0)->get();
+            $incompleteUsers = User::where('is_registered', false)->get();
 
             foreach ($incompleteUsers as $incompleteUser) {
                 // Send reminder email
