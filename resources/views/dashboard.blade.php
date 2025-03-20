@@ -33,7 +33,7 @@
                                         </div>
                                         <div class="right">
                                             <h4>Users Approved</h4>
-                                            <p class="percent" id="percent1">{{ $allPendingUsers }}</p>
+                                            <p class="percent" id="percent1">{{ $allApprovedUsers }}</p>
                                         </div>
                                     </div>
 
@@ -45,7 +45,7 @@
                                         </div>
                                         <div class="right">
                                             <h4>Users Pending</h4>
-                                            <p class="percent" id="percent2">{{ $allApprovedUsers }}</p>
+                                            <p class="percent" id="percent2">{{ $allPendingUsers }}</p>
                                         </div>
                                     </div>
 
